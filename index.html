@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>數學題庫｜教師管理平台</title><link href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" rel="stylesheet"/><script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script><style>
+:root{font-family:'Microsoft JhengHei','Noto Sans TC',Arial,sans-serif;color:#24313a;background:#f8faf9}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus,textarea:focus,select:focus{outline:2px solid #25866a;outline-offset:1px}.shell{display:grid;grid-template-columns:238px minmax(0,1fr);min-height:100vh}.side{background:linear-gradient(165deg,#064c3d,#043b34);color:white;padding:24px 11px}.brand{font-size:24px;font-weight:800;padding:0 16px 28px;border-bottom:1px solid #ffffff2c;margin-bottom:25px;letter-spacing:1px}.nav{display:block;width:100%;border:0;border-radius:10px;background:none;color:#e4f4ee;text-align:left;padding:14px 17px;font-size:16px;margin:4px 0}.nav:hover{background:#ffffff16}.nav.active{background:#328760;color:white;font-weight:700}.sidefoot{font-size:12px;color:#bbd9d1;margin:35px 15px;line-height:1.8}.work{min-width:0}.bar{height:58px;background:white;border-bottom:1px solid #e1e6e9;display:flex;align-items:center;justify-content:flex-end;padding:0 30px;color:#59676f;font-size:13px}main{padding:26px 32px 45px;max-width:1550px;margin:auto}section{display:block}h1{font-size:27px;margin:0 0 8px;color:#075744}h2{font-size:19px}p{line-height:1.7}.sub{color:#73808a;font-size:13px}.top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:23px}.primary{border:0;background:#087153;color:white;border-radius:9px;padding:12px 20px;font-weight:700}.primary:hover{background:#045b44}.outline{background:#fff;color:#354653;border:1px solid #cdd6db;border-radius:9px;padding:10px 15px}.outline:hover{border-color:#087153;color:#087153}.panel{background:white;border:1px solid #e1e7e9;border-radius:12px;padding:24px;margin-bottom:18px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:white;border:1px solid #dce6e2;border-radius:13px;padding:24px;text-align:left;cursor:pointer}.card:hover{border-color:#16815e;background:#f4fbf7}.card h2{margin:6px 0}.card strong{font-size:31px;color:#087153}.field label,.label{display:block;font-size:14px;color:#52616c;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;background:white;border:1px solid #cfd8dd;border-radius:9px;padding:11px 12px;color:#25313a}.field textarea{resize:vertical;min-height:140px;line-height:1.8}.field input:focus,.field textarea:focus{border-color:#087153}.fields{display:grid;grid-template-columns:1fr 1fr 1fr 1fr 2fr;gap:18px;align-items:end}.fields.second{grid-template-columns:1fr 1fr 2fr;margin-top:20px}.editorgrid{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-top:34px}.preview{border:1px dashed #b9c8cf;border-radius:12px;min-height:155px;padding:20px 18px;background:#fff;line-height:2;white-space:pre-wrap;font-family:'Times New Roman','Noto Serif TC',serif;font-size:19px}.preview .katex,.body .katex,.mathtext .katex{font-size:1.07em}.toolbar{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0 22px}.symbol{border:1px solid #d6dce1;background:white;border-radius:7px;padding:8px 13px;min-width:39px;font-family:'Times New Roman',serif;font-size:19px}.symbol:hover{background:#eff8f3;border-color:#087153}.detail{border:1px solid #d8dfe3;border-radius:9px;margin-top:10px;background:#f9fafb}.detail summary{cursor:pointer;font-weight:700;padding:13px 18px}.detail>div{padding:10px 18px 18px;background:white}.actions{display:flex;gap:10px;justify-content:flex-end;margin-top:28px}.filters{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:15px}.question{background:white;border:1px solid #e1e7e9;border-radius:11px;padding:19px;margin-top:12px}.question h3{margin:12px 0}.question .body{font-family:'Times New Roman',serif;font-size:19px;line-height:1.9;white-space:pre-wrap}.meta,.question footer{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.question footer{margin-top:15px}.tag{font-size:12px;background:#edf3f1;padding:5px 9px;border-radius:7px;color:#526660}.count{font-size:13px;color:#73808a}.empty{padding:35px;text-align:center;color:#75838c}.hidden{display:none!important}.notice{padding:14px;background:#fff9e9;border:1px solid #efe4c7;border-radius:9px;color:#755e33;margin-top:18px}.statrow{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:18px 0 30px}.stat{background:#fff;border:1px solid #dce6e2;border-radius:12px;padding:19px}.stat b{font-size:29px;color:#087153;display:block;margin-top:9px}.katex{color:#111}.sep{border:0;border-top:1px solid #e5e9ed;margin:20px 0}@media(max-width:1050px){.fields,.fields.second,.filters{grid-template-columns:repeat(2,1fr)}.editorgrid{grid-template-columns:1fr}.shell{grid-template-columns:195px minmax(0,1fr)}main{padding:22px}.cards{gap:10px}}@media(max-width:680px){.shell{display:block}.side{padding:10px;position:static}.brand{padding:8px 12px;margin:0;font-size:19px}.nav{width:auto;display:inline-block;font-size:13px;padding:10px;margin:3px}.sidefoot{display:none}.bar{height:38px;padding:0 15px}main{padding:16px}.fields,.fields.second,.filters,.cards,.statrow{grid-template-columns:1fr}.top{align-items:flex-start}.actions{flex-wrap:wrap}.preview{font-size:17px}}
+
+/* 題庫卡片操作：刪除固定最右，避免錯位 */
+.question footer{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.question footer .delete-btn{margin-left:auto;color:#a13b3b;border-color:#e7caca;background:#fffafa}
+.question footer .delete-btn:hover{background:#fff0f0;border-color:#bb6767}
+/* 數學式採 Times 風格，分數以 display-style 顯示，避免縮小 */
+.preview .katex,.body .katex,.mathtext .katex{font-size:1.08em}
+.katex .mfrac{font-size:1em}
+.source-fields{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-top:16px}
+@media(max-width:850px){.source-fields{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.source-fields{grid-template-columns:1fr}}
+ .question .body,.preview{white-space:pre-wrap;line-height:1.9}.answer-preview{min-height:76px;background:#fbfdfc}.solution-preview{min-height:160px;background:#f5f6f6;line-height:1.85}.answer-preview .katex,.solution-preview .katex{font-size:1.08em} 
+#new .editor-save-floating{position:fixed;right:24px;bottom:24px;z-index:40;box-shadow:0 3px 12px #0002;min-height:46px}#new .actions{padding-bottom:64px}@media(max-width:600px){#new .editor-save-floating{right:14px;bottom:14px}}@media print{#new .editor-save-floating{display:none!important}}
+</style><style>.difficulty-badge{font-weight:700;border:1px solid transparent}.difficulty-易{color:#176b40;background:#e3f5e9;border-color:#b8dfc5}.difficulty-中{color:#975500;background:#fff0ce;border-color:#f3d18a}.difficulty-難{color:#8b1e27;background:#f8e3e5;border-color:#e9b9be}.qfigure{display:block;width:min(100%,400px);max-height:340px;object-fit:contain;margin:12px 0}.katex{font-size:1.1em}.katex .mfrac{font-size:1.12em}#saveNotice{position:fixed;right:24px;top:22px;z-index:99999;max-width:min(450px,calc(100vw - 40px));background:#e9f7ee;color:#08613e;border:1px solid #86c9a6;border-left:5px solid #08714e;padding:16px 20px;border-radius:12px;box-shadow:0 10px 32px #0002;font-size:16px;font-weight:700;display:none;opacity:0;transform:translateY(-8px);transition:opacity .7s ease,transform .7s ease;pointer-events:none}</style><style>#answerDetail>.editorgrid,#solutionDetail>.editorgrid{margin-top:0;padding:16px 18px 20px;background:#fff;align-items:start}#answerDetail .preview,#solutionDetail .preview{overflow-wrap:anywhere;min-height:110px}#solutionDetail .preview{min-height:210px}@media(max-width:1050px){#answerDetail>.editorgrid,#solutionDetail>.editorgrid{grid-template-columns:1fr}}</style><style id="v27-layout-fixes">
+/* Keep every editing area level with its preview, without changing saved data. */
+.editorgrid, #answerDetail>.editorgrid, #solutionDetail>.editorgrid {
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+  align-items:stretch;
+  gap:18px;
+}
+.editorgrid>.field {display:flex;flex-direction:column;min-width:0;min-height:0}
+.editorgrid>.field textarea {flex:1 1 auto;height:100%;min-height:230px;resize:vertical;line-height:1.75}
+.editorgrid>div:not(.field) {display:flex;flex-direction:column;min-width:0}
+.editorgrid>div:not(.field)>.preview {flex:1 1 auto;min-height:230px;overflow-wrap:break-word}
+#answerDetail .editorgrid textarea,#answerDetail .editorgrid .preview {min-height:230px}
+#solutionDetail .editorgrid textarea,#solutionDetail .editorgrid .preview {min-height:410px}
+/* Taller inline-math line boxes avoid adjacent fraction bars and numerators colliding. */
+#solutionPreview,#answerPreview,#preview {line-height:3.0;white-space:pre-wrap;overflow-wrap:break-word}
+#solutionPreview .katex,#answerPreview .katex,#preview .katex {vertical-align:middle}
+#solutionPreview .katex-display,#answerPreview .katex-display,#preview .katex-display {margin:0.55em 0;overflow-x:auto;overflow-y:hidden}
+#solutionPreview .katex .mfrac,#answerPreview .katex .mfrac,#preview .katex .mfrac {font-size:1em}
+@media(max-width:1050px){.editorgrid,#answerDetail>.editorgrid,#solutionDetail>.editorgrid{grid-template-columns:1fr}}
+</style><style id="v28-math-accents">
+/* KaTeX needs its own font metrics to align overline, overleftrightarrow and fractions. */
+.preview .katex .mathnormal,.body .katex .mathnormal,.mathtext .katex .mathnormal,
+.preview .katex .mathrm,.body .katex .mathrm,.mathtext .katex .mathrm {font-family:KaTeX_Math,KaTeX_Main,serif}
+.katex .overline-line {border-top-width:0.06em}
+#saveNotice {right:auto;top:auto;left:24px;bottom:22px;pointer-events:none;z-index:1000}
+@media(max-width:680px){#saveNotice{left:12px;bottom:12px;max-width:calc(100vw - 24px)}}
+</style><style id="v33-compact-math">
+/* Override V2.7's 3.0 line height, which made solution previews excessively tall. */
+#solutionPreview,#answerPreview,#preview{line-height:1.85!important;white-space:pre-wrap}
+#solutionPreview .katex-display,#answerPreview .katex-display,#preview .katex-display{margin:.22em 0!important;overflow-x:auto;overflow-y:visible}
+#solutionPreview .katex,#answerPreview .katex,#preview .katex{line-height:1.2}
+#solutionPreview>div,#answerPreview>div,#preview>div{margin:0}
+</style><style id="v34-fluid-math">
+/* Let KaTeX measure each formula at its natural height; never create mini scrollbars. */
+#preview,#answerPreview,#solutionPreview{line-height:1.7!important;overflow-x:visible;overflow-y:visible;white-space:pre-wrap}
+#preview .katex-display,#answerPreview .katex-display,#solutionPreview .katex-display,
+.mathtext .katex-display,.question .body .katex-display{
+ display:block;overflow:visible!important;max-height:none!important;height:auto!important;
+ margin:.35em 0!important;padding:.16em 0!important;white-space:normal;
+ line-height:normal!important;min-height:0;
+}
+#preview .katex-display>.katex,#answerPreview .katex-display>.katex,#solutionPreview .katex-display>.katex,
+.mathtext .katex-display>.katex{display:block;overflow:visible!important;white-space:nowrap;line-height:normal!important}
+#preview .katex,#answerPreview .katex,#solutionPreview .katex{line-height:normal!important}
+#preview .katex-html,#answerPreview .katex-html,#solutionPreview .katex-html{overflow:visible!important}
+#preview .katex-display>.katex>.katex-html,#answerPreview .katex-display>.katex>.katex-html,#solutionPreview .katex-display>.katex>.katex-html{display:block}
+/* A tall formula expands the preview naturally instead of clipping fractions or braces. */
+#preview,#answerPreview,#solutionPreview{height:auto!important;max-height:none!important;min-height:230px}
+#solutionPreview{min-height:410px}
+</style><style id="v35-comfortable-spacing">
+/* Comfortable but compact paragraphs, while tall math retains its natural dimensions. */
+#preview,#answerPreview,#solutionPreview{line-height:1.65!important;white-space:pre-wrap;overflow-y:visible!important}
+#preview .katex-display,#answerPreview .katex-display,#solutionPreview .katex-display,
+.mathtext .katex-display,.question .body .katex-display{margin:8px 0!important;padding:0.15em 0!important;overflow:visible!important;height:auto!important;max-height:none!important}
+#preview .katex-display .katex,#answerPreview .katex-display .katex,#solutionPreview .katex-display .katex{line-height:normal!important;overflow:visible!important}
+</style><style id="v37-inline-baseline">
+/* Keep inline math on the surrounding text baseline without clipping tall fractions. */
+#preview .katex:not(.katex-display .katex),#answerPreview .katex:not(.katex-display .katex),#solutionPreview .katex:not(.katex-display .katex),.mathtext .katex:not(.katex-display .katex){vertical-align:baseline!important;position:relative;top:0!important}
+#preview span:has(>.katex),#answerPreview span:has(>.katex),#solutionPreview span:has(>.katex),.mathtext span:has(>.katex){vertical-align:baseline!important}
+</style><style id="trash-v44">#trashList .question{margin-top:14px}#trashNavCount{font-size:12px;opacity:.75}#trash .question .body{max-height:220px;overflow:auto}#trash .question footer{justify-content:flex-start}#trash .question footer .delete-btn{margin-left:auto}</style><style id="v47-images-nav">@media(min-width:681px){.side{position:sticky;top:0;height:100vh;overflow-y:auto;align-self:start;scrollbar-width:thin}.shell{align-items:start}}@media(max-width:680px){.side{position:sticky;top:0;z-index:100;max-height:38vh;overflow-y:auto;box-shadow:0 3px 12px #0002}}.image-controls{background:#f6faf8;border:1px solid #d5e5dd;border-radius:10px;padding:12px;margin:12px 0}.image-controls .img-item{border-top:1px solid #dce7e1;padding:12px 0;display:flex;flex-wrap:wrap;align-items:center;gap:12px}.image-controls .img-item img{max-width:150px;max-height:110px;object-fit:contain}.image-controls input[type=range]{width:180px;max-width:100%}.image-controls button{padding:7px 11px}.embedded-img{display:block;max-width:100%;height:auto;object-fit:contain;margin:2.5mm 0}.preview .embedded-img{max-height:none}#solutionPreview,#answerPreview{isolation:isolate}#solutionPreview .embedded-img,#answerPreview .embedded-img{mix-blend-mode:multiply;background:transparent}.image-controls .sub{line-height:1.6}</style><style id="v48-uniform-fractions">
+/* Consistent display-style fractions without artificially scaling KaTeX internals. */
+.katex .mfrac{font-size:inherit!important}
+.preview,.question .body,.mathtext,#preview,#answerPreview,#solutionPreview{
+ line-height:1.9!important;
+}
+.preview .katex,.question .body .katex,.mathtext .katex{
+ line-height:normal!important;
+}
+.preview .katex-display,.question .body .katex-display,.mathtext .katex-display{
+ margin:.3em 0!important;padding:.08em 0!important;
+ overflow:visible!important;
+}
+/* Keep inline fractions on the baseline, and let the line box grow naturally. */
+.preview span:has(>.katex),.question .body span:has(>.katex),.mathtext span:has(>.katex){
+ display:inline;vertical-align:baseline;
+}
+</style><style>.question{position:relative}.question>.meta{padding-right:38px}.favorite-btn{position:absolute;top:12px;right:12px;border:0;background:transparent;color:#8b9499;font-size:25px;line-height:1;padding:5px;cursor:pointer}.favorite-btn[aria-pressed=true],.favorite-filter[aria-pressed=true]{color:#b58a29}.favorite-filter{font-size:20px;line-height:1;border:1px solid #d3d9d6;background:white;border-radius:8px;padding:8px 12px;color:#8b9499;cursor:pointer}.favorite-btn:focus-visible,.favorite-filter:focus-visible{outline:2px solid #16834b;outline-offset:2px}</style><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><style>body.viewer [data-page="new"],body.viewer [data-page="trash"],body.viewer [data-page="backup"],body.viewer [onclick*="resetEditor"],body.viewer [onclick^="edit("],body.viewer [onclick^="removeQuestion"],body.viewer [onclick^="manageSources"],body.viewer .favorite-btn{display:none!important}@media print{#cloudGate{display:none!important}}</style><style>#cloudGate{position:fixed;inset:0;z-index:99999;background:#edf2ef;display:grid;place-items:center;padding:24px;overflow:auto;font-family:system-ui,"Microsoft JhengHei",sans-serif}.login-layout{display:grid;grid-template-columns:1fr 1fr;width:min(880px,100%);background:white;border:1px solid #dce5df;border-radius:24px;overflow:hidden;box-shadow:0 20px 65px #234c3420}.login-intro{background:#245b48;color:#fff;padding:52px 42px;display:flex;flex-direction:column;justify-content:center;min-height:460px}.login-mark{font-family:Georgia,serif;font-size:38px;border:1px solid #ffffff66;border-radius:14px;width:64px;height:64px;display:grid;place-items:center;margin-bottom:32px}.login-eyebrow{font-size:11px;letter-spacing:2px;font-weight:700;color:#8ba99a}.login-intro .login-eyebrow{color:#b9d7c7}.login-intro h1{font-size:38px;color:white;margin:12px 0}.login-intro p{font-size:20px;line-height:1.8;color:#e0eee6}.login-features{font-size:13px;margin:22px 0 42px;color:#c6dfd2}.login-intro small{color:#c6dfd2}#cloudLogin{padding:52px 42px;display:flex;flex-direction:column;justify-content:center;min-width:0}#cloudLogin h2{font-size:28px;margin:12px 0 4px;color:#203b30}.login-sub{font-size:14px;color:#718078;margin:0 0 24px}#cloudLogin label{font-size:14px;color:#344b40;margin:10px 0 7px}#cloudLogin input:not([type=checkbox]){width:100%;box-sizing:border-box;padding:13px;border:1px solid #cbd8d0;border-radius:9px;background:#fafcfb;font-size:15px}#cloudLogin input:focus{outline:2px solid #78a994;outline-offset:1px}#cloudLogin .login-show{display:flex;align-items:center;gap:7px;margin:14px 0}#cloudLogin .login-show input{width:auto}#cloudLogin button{width:100%;padding:13px;background:#287457;color:white;border:0;border-radius:9px;font-size:16px;font-weight:700;cursor:pointer}#cloudLogin button:disabled{opacity:.6}#cloudError{min-height:36px;font-size:13px;color:#a13c32;overflow-wrap:anywhere;margin:12px 0}.login-foot{border-top:1px solid #e5ebe7;padding-top:14px;font-size:11px;color:#77877e}@media(max-width:680px){.login-layout{grid-template-columns:1fr}.login-intro{min-height:0;padding:24px}.login-intro h1{font-size:26px}.login-intro p,.login-features,.login-intro small,.login-mark{display:none}#cloudLogin{padding:26px}#cloudGate{padding:14px}}</style><style>
+#cloudGate[data-phase="checking"] .login-layout{display:none}#cloudGate:not([data-phase="checking"]) .cloud-loading{display:none}.cloud-loading{text-align:center;color:#47665b;display:grid;justify-items:center;gap:12px}.cloud-loading strong{font-size:19px;letter-spacing:1px}.cloud-loading small{font-size:13px;color:#75867e}.cloud-spinner{width:28px;height:28px;border:2px solid #d5e2da;border-top-color:#28765b;border-radius:50%;animation:cloudSpin .8s linear infinite}@keyframes cloudSpin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.cloud-spinner{animation:none}}.bar .cloud-logout{display:inline-flex;align-items:center;gap:7px;border:1px solid #d5e0da;border-radius:7px;background:#fff;color:#526b60;padding:7px 12px;font-size:13px;font-weight:500;line-height:1.4;transition:background .15s,border-color .15s}.bar .cloud-logout:hover{background:#edf4ef;border-color:#a5bdb0;color:#285d48}.cloud-logout svg{width:16px;height:16px;flex:none}
+</style></head><body><script>window.addEventListener("error",function(e){var el=document.getElementById("cloudError");if(el)el.textContent="網頁初始化錯誤："+e.message;var gate=document.getElementById("cloudGate");if(gate&&gate.dataset.phase==="checking")gate.dataset.phase="login";});</script><div id="cloudGate" data-phase="checking"><div class="cloud-loading" role="status"><div class="cloud-spinner" aria-hidden="true"></div><strong>數學題庫</strong><small>正在確認登入狀態…</small></div><div class="login-layout"><div class="login-intro"><div class="login-mark">∑</div><div class="login-eyebrow">MATH QUESTION BANK</div><h1>數學題庫</h1><p>整理每一道題目，<br>讓教學準備更有效率。</p><div class="login-features">題庫管理　·　智慧組卷　·　雲端同步</div><small>怡甄老師｜數學教學工作平台</small></div><form id="cloudLogin"><div class="login-eyebrow">PRIVATE WORKSPACE</div><h2>登入題庫</h2><p class="login-sub">使用已授權的帳號進入工作平台。</p><label for="cloudEmail">電子郵件</label><input id="cloudEmail" type="email" required autocomplete="username" placeholder="name@example.com"><label for="cloudPassword">密碼</label><input id="cloudPassword" type="password" required autocomplete="current-password" placeholder="請輸入密碼"><label class="login-show"><input type="checkbox" onchange="document.getElementById('cloudPassword').type=this.checked?'text':'password'"> 顯示密碼</label><button class="primary" type="submit">登入</button><p id="cloudError" role="status" aria-live="polite">正在初始化連線…</p><div class="login-foot">私人題庫 · 僅限授權帳號　｜　V7.4</div></form></div></div><div class="shell" inert><aside class="side"><div class="brand">▣ 數學題庫</div><button class="nav active" data-page="home">⌂　首頁</button><button class="nav" data-page="browse">▤　題庫總覽</button><button class="nav" data-page="new">⊕　新增題目</button><button class="nav" data-page="selected">☷　組成考卷</button><button class="nav" data-page="trash">♻　垃圾桶 <span id="trashNavCount"></span></button><button class="nav" data-page="backup">▣　備份／匯入匯出</button><div class="sidefoot">V7.4 · 雲端測試版</div></aside><div class="work"><div class="bar"><span id="cloudStatus">尚未登入</span>　<button onclick="syncNow()">立即同步</button> <button type="button" class="cloud-logout" onclick="cloudLogout()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 17l5-5-5-5m5 5H3m9-9h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7"/></svg>登出</button></div><main>
+<section id="home"><div class="top"><div><h1>我的數學題庫</h1><div class="sub">依學制、年級與章節整理題目，隨時選題製作講義。</div></div><button class="primary" onclick="resetEditor();go('new')">＋ 新增題目</button></div><div class="statrow"><div class="stat">題目總數<b id="statTotal">0</b></div><div class="stat">國小數學<b id="statPrimary">0</b></div><div class="stat">國中數學<b id="statJunior">0</b></div><div class="stat">高中數學<b id="statSenior">0</b></div></div><h2>選擇學制</h2><div class="cards"><button class="card" onclick="choose('國小')"><div class="sub">PRIMARY</div><h2>國小數學</h2><p class="sub">小一～小六 · 分數、幾何、應用題</p></button><button class="card" onclick="choose('國中')"><div class="sub">JUNIOR HIGH</div><h2>國中數學</h2><p class="sub">國一～國三 · 代數、函數、幾何</p></button><button class="card" onclick="choose('高中')"><div class="sub">SENIOR HIGH</div><h2>高中數學</h2><p class="sub">高一～高三 · 多項式、三角、機率</p></button></div><div class="notice">雲端測試版：請確認同步完成後再關閉網頁。</div></section>
+<section class="hidden" id="browse"><div class="top"><div><h1>題庫總覽</h1><div class="sub">新增後自動顯示題目；更新版本前請先匯出 JSON 備份</div></div><button class="primary" onclick="resetEditor();go('new')">＋ 新增題目</button></div><div class="panel"><div class="filters"><div class="field"><label>學制</label><select id="level" onchange="changeLevel()"></select></div><div class="field"><label>年級</label><select id="grade" onchange="$('unit').value='全部單元';$('chapterFilter').value='全部章節';render()"></select></div><div class="field"><label>單元</label><select id="unit" onchange="$('chapterFilter').value='全部章節';render()"></select></div><div class="field"><label>章節</label><select id="chapterFilter" onchange="render()"><option>全部章節</option></select></div><div class="field"><label>難易度</label><select id="difficultyFilter" onchange="render()"><option value="全部難度">全部難度</option><option>易</option><option>中</option><option>難</option></select></div><div class="field"><label>關鍵字搜尋</label><input id="search" oninput="render()" placeholder="搜尋題目、來源、標籤"/></div></div></div><div class="top"><h2>題目列表</h2><div style="display:flex;align-items:center;gap:10px"><button type="button" class="favorite-filter" id="featuredFilter" aria-pressed="false" title="僅顯示收藏" aria-label="僅顯示收藏" onclick="toggleFavoriteFilter()">☆</button><span class="count" id="resultCount"></span></div></div><div id="results"></div></section>
+<section class="hidden" id="new"><div class="top"><div><h1 id="editorTitle">新增題目</h1><div class="sub">輸入題目後，即時預覽右側的數學式排版</div></div><button class="outline" onclick="go('browse')">返回題庫</button></div><div class="panel"><div class="fields"><div class="field"><label>學制</label><select id="editLevel" onchange="editLevelChanged()"></select></div><div class="field"><label>年級</label><select id="editGrade"></select></div><div class="field"><label>冊次</label><select id="editBook"><option value="" disabled hidden></option><option value="第一冊">第一冊</option><option value="第二冊">第二冊</option><option value="第三冊">第三冊</option><option value="第四冊">第四冊</option><option value="第五冊">第五冊</option><option value="第六冊">第六冊</option></select></div><div class="field"><label>單元</label><input id="editUnit"/></div><div class="field"><label>章節</label><input id="editChapter"/></div></div><div class="fields second"><div class="field"><label>題型</label><select id="editType"><option>選擇題</option><option>多選題</option><option>填充題</option><option>計算題</option><option>應用題</option><option>證明題</option></select></div><div class="field"><label>難度</label><select id="editDifficulty"><option>易</option><option>中</option><option>難</option></select></div><div class="field"><label>補充來源說明</label><input id="editSource"/></div></div><div class="source-fields"><div class="field"><label>出處類型</label><select id="editSourceType"></select></div><div class="field"><label>學校／競賽名稱</label><input id="editSchool"/></div><div class="field"><label>學年度</label><input id="editYear"/></div><input type="hidden" id="editExam"/><div class="field"><label>來源顯示名稱</label><input id="editSourceDisplay"/></div></div><input type="hidden" id="editTitle"/><div class="editorgrid"><div class="field"><label>題目內容（可輸入 LaTeX 語法）</label><textarea id="editBody" oninput="preview()"></textarea></div><div><label class="label">題目即時預覽</label><div class="preview" id="preview"></div><div class="sub" id="mathStatus" style="margin-top:8px">數學公式載入中…</div></div></div><div class="image-controls" id="imageControls-body"><strong>題目圖片</strong><div class="sub">可加入多張圖片，拖曳滑桿調整寬度；儲存後保留設定。</div><input type="file" accept="image/*" multiple onchange="addEditorImages('body',this)" aria-label="上傳圖片"><div id="imageList-body"></div></div><div class="toolbar"><button class="symbol" onclick="insertFormula('$x^2$')" title="次方">x²</button><button class="symbol" onclick="insertFormula('$x_{n}$')" title="下標">xₙ</button><button class="symbol" onclick="insertFormula('$\frac{a}{b}$')" title="分數">a⁄b</button><button class="symbol" onclick="insertFormula('$\sqrt{x}$')" title="平方根">√</button><button class="symbol" onclick="insertFormula('$\sqrt[3]{x}$')" title="立方根">∛</button><button class="symbol" onclick="insertFormula('$|x|$')" title="絕對值">|a|</button><button class="symbol" onclick="insertFormula('$\angle ABC$')" title="角度">∠</button><button class="symbol" onclick="insertFormula('$\leq$')">≤</button><button class="symbol" onclick="insertFormula('$\geq$')">≥</button><button class="symbol" onclick="insertFormula('$\neq$')">≠</button><button class="symbol" onclick="insertFormula('$\pi$')">π</button><button class="symbol" onclick="insertFormula('$\times$')">×</button></div><details class="detail" id="answerDetail" open=""><summary>答案</summary><div class="editorgrid detail-editorgrid"><div class="field"><label>答案（可輸入 LaTeX）</label><textarea id="editAnswer" oninput="preview()" style="min-height:110px"></textarea></div><div><label class="label">答案即時預覽</label><div class="preview answer-preview" id="answerPreview"></div></div></div><div class="image-controls" id="imageControls-answer"><strong>答案圖片</strong><div class="sub">可加入多張圖片，拖曳滑桿調整寬度；儲存後保留設定。</div><input type="file" accept="image/*" multiple onchange="addEditorImages('answer',this)" aria-label="上傳圖片"><div id="imageList-answer"></div></div></details><details class="detail" id="solutionDetail" open=""><summary>詳解（可寫多種解法）</summary><div class="editorgrid detail-editorgrid"><div class="field"><label>完整解題過程</label><textarea id="editSolution" oninput="preview()" style="min-height:210px"></textarea></div><div><label class="label">詳解即時預覽</label><div class="preview solution-preview" id="solutionPreview"></div></div></div><div class="image-controls" id="imageControls-solution"><strong>詳解圖片</strong><div class="sub">可加入多張圖片，拖曳滑桿調整寬度；儲存後保留設定。</div><input type="file" accept="image/*" multiple onchange="addEditorImages('solution',this)" aria-label="上傳圖片"><div id="imageList-solution"></div></div></details><details class="detail" id="tagsDetail"><summary>標籤（可多選／自訂）</summary><div class="field"><label>使用逗號分隔標籤</label><input id="editTags"/></div></details><div class="actions"><button class="outline" onclick="confirmClearEditor()">清除編輯內容</button><button class="outline hidden" id="undoEditorClear" onclick="undoEditorClear()">↶ 復原清除</button><button class="primary editor-save-floating" onclick="save()">▣ 儲存題目</button></div></div></section>
+<section class="hidden" id="selected"><div class="top"><div><h1>組成考卷</h1><div class="sub">手動選題或依條件自動抽題，再調整及列印</div></div></div><div class="panel" id="composePanel"><div class="toolbar"><button class="outline" onclick="composeMode='manual';refreshCompose()">手動選題</button><button class="outline" onclick="composeMode='auto';refreshCompose()">自動組卷</button></div><div id="composeFilters"></div><div id="composeActions"></div><div id="composeResults"></div></div><h2>目前試卷 <span id="composeCount"></span></h2><div id="selectionList"></div><div class="toolbar"><button class="primary" onclick="printSelected(false)">列印學生版</button><button class="outline" onclick="printSelected(true)">列印教師版</button><button class="outline" onclick="clearSelected()">清空選題</button><button class="outline hidden" id="undoClearSelection" onclick="undoClearSelected()">↶ 復原上次清空</button></div><div class="notice">此版本使用瀏覽器列印功能；正式 XeLaTeX 試卷模板將在後續版本加入。</div></section>
+<section class="hidden" id="trash"><div class="top"><div><h1>垃圾桶</h1><div class="sub">刪除的題目會先移到這裡；還原後會回到原本的分類與題庫。</div></div></div><div class="panel"><div class="top"><div><strong id="trashCount">垃圾桶目前有 0 題</strong><div class="sub">永久刪除無法從垃圾桶還原，請先備份重要資料。</div></div><button id="emptyTrashButton" class="outline delete-btn" onclick="emptyTrash()" disabled>清空垃圾桶</button></div><div id="trashList"></div></div></section><section class="hidden" id="backup"><div class="top"><div><h1>備份／匯入匯出</h1><div class="sub">避免瀏覽器清除資料造成題目遺失</div></div></div><div class="panel"><h2>題庫備份</h2><p>請定期下載 JSON 檔案保存。需要換電腦時，可使用匯入功能還原題目。</p><div class="toolbar"><button class="primary" onclick="exportData()">下載 JSON 備份</button><label class="outline" style="cursor:pointer">匯入 JSON 備份<input accept=".json,application/json" hidden="" onchange="importData(event)" type="file"/></label></div><div class="notice">匯入採合併方式，保留原有題目及設定。重複題目會先檢查。</div></div><div class="panel"><h2>已收錄考卷</h2><p class="sub">依目前正式題庫統計，同一考卷只列一次；全部移至垃圾桶後即不顯示。</p><input id="paperSearch" style="width:100%;max-width:360px;padding:10px;border:1px solid #ccd4d2;border-radius:8px" placeholder="搜尋考卷" oninput="renderPapers()"><div id="paperList"></div></div><div class="panel hidden" id="importReview"><h2>匯入檢查</h2><div id="importSummary"></div><div id="importMatches"></div><div class="toolbar"><button class="primary" onclick="commitImport()">確認匯入</button><button class="outline" onclick="cancelImport()">取消</button></div></div></section>
+</main></div></div><script>
+const KEY='math_bank_personal_stable_v1';const TRASH_KEY='math_bank_personal_trash_v1';const GRADES={'國小':['小一','小二','小三','小四','小五','小六'],'國中':['國一','國二','國三'],'高中':['高一','高二','高三']};const sample=[]; const NINE_MIGRATION_KEY='cloud_no_legacy'; const normalizeDifficulty=v=>({'基礎':'易','中等':'中','進階':'難','簡單':'易'}[v]||v||'中');
+const mem=new Map(); const cloudMemory={getItem:k=>mem.get(k)??null,setItem:(k,v)=>mem.set(k,String(v)),removeItem:k=>mem.delete(k)}; function readArray(k){return null} let data=[];
+let trash=readArray(TRASH_KEY)||[];let chosen=new Set(),editing=null;const $=id=>document.getElementById(id);const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));function persist(){try{const serialized=JSON.stringify(data);cloudMemory.setItem(KEY,serialized);if(cloudMemory.getItem(KEY)!==serialized)throw new Error('寫入驗證失敗');const totalEl=$('total');if(totalEl)totalEl.textContent=`目前共 ${data.length} 題`;if(cloudMemory.getItem(NINE_MIGRATION_KEY)!=='1')cloudMemory.setItem(NINE_MIGRATION_KEY,'1');return true}catch(e){alert('儲存失敗：'+e.message+'。請勿關閉此頁，先使用「備份／匯入匯出」下載 JSON 備份。');return false}};function fill(sel,values){sel.innerHTML=values.map(v=>`<option>${esc(v)}</option>`).join('')};fill($('level'),['全部',...Object.keys(GRADES)]);fill($('editLevel'),Object.keys(GRADES));function changeLevel(){fill($('grade'),['全部年級',...($('level').value==='全部'?Object.values(GRADES).flat():GRADES[$('level').value])]);$('unit').innerHTML='<option>全部單元</option>';$('chapterFilter').value='全部章節';render()};function editLevelChanged(){fill($('editGrade'),GRADES[$('editLevel').value]);const b=$('editBook');b.required=$('editLevel').value!=='國小';b.options[0].disabled=b.required;b.options[0].hidden=b.required};let browseScroll=0,browseReturnToken=0;function go(page){if(!$('browse').classList.contains('hidden'))browseScroll=window.scrollY;const token=++browseReturnToken;document.querySelectorAll('main>section').forEach(s=>s.classList.toggle('hidden',s.id!==page));document.querySelectorAll('aside button').forEach(b=>b.classList.toggle('active',b.dataset.page===page));if(page==='browse')render();if(page==='selected')renderSelected();if(page==='trash')renderTrash();if(page==='backup')renderPapers();if(page==='new')resetEditor();if(page==='browse'){scrollTo(0,browseScroll);requestAnimationFrame(()=>{if(token===browseReturnToken)scrollTo(0,browseScroll)})}else scrollTo(0,0)}document.querySelectorAll('aside button').forEach(b=>b.onclick=()=>go(b.dataset.page));function choose(level){browseScroll=0;$('level').value=level;changeLevel();go('browse')};function isFeatured(x){return x.featured===true}function starMarkup(x){const active=isFeatured(x);return `<button type="button" class="favorite-btn" data-favorite-id="${esc(x.id)}" aria-pressed="${active}" aria-label="${active?'取消收藏':'收藏題目'}" title="${active?'取消收藏':'收藏題目'}" onclick="toggleFavorite(this.dataset.favoriteId)">${active?'★':'☆'}</button>`}function toggleFavoriteFilter(){const b=$('featuredFilter'),active=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',String(active));b.textContent=active?'★':'☆';render()}function toggleFavorite(id){const q=data.find(x=>x.id===id);if(!q)return;const old=q.featured;q.featured=!isFeatured(q);if(!persist()){if(old===undefined)delete q.featured;else q.featured=old;return}render();renderSelected()}function sourceLabel(x){return String(x.sourceDisplay||'').trim()||[x.year,x.school].filter(Boolean).join(' ')||''};// 課程排序：只調整選單，不改寫題目資料。各版本教材名稱可用別名比對。
+const curriculumOrder={
+ '國一':['數與數線|整數|正負數|正數與負數','分數|因數與倍數','一元一次方程式','二元一次聯立方程式','直角坐標|直角座標|二元一次方程式的圖形','比與比例|比率','一元一次不等式','統計'],
+ '國二':['乘法公式|多項式','二次方根|根式|畢氏定理','因式分解','一元二次方程式','數列與級數|等差數列','三角形的基本性質|三角形','平行與四邊形|平行線|四邊形'],
+ '國三':['相似形|相似三角形','圓形|圓的性質|圓','幾何證明','二次函數','統計|機率','立體圖形'],
+ '高一':['數與式|實數','多項式函數|多項式','指數與對數|指對數','直線與圓|直線|圓','數列與級數|數列','排列組合|排列與組合','機率','數據分析|統計'],
+ '高二':['三角函數','指數與對數|指對數','平面向量','空間向量','空間中的直線與平面|空間直線','矩陣','二次曲線','機率|統計'],
+ '高三':['極限','微分','積分','機率|統計']
+};
+const curriculumGrades=['國一','國二','國三','高一','高二','高三'];
+function courseRank(q){
+ const norm=v=>String(v??'').normalize('NFKC').replace(/\s+/g,'');
+ const g=curriculumGrades.indexOf(q.grade), l=['國小','國中','高中'].indexOf(q.level);
+ const order=curriculumOrder[q.grade]||[], u=order.findIndex(v=>v.split('|').some(k=>norm(q.unit).includes(k)));
+ const m=norm(q.book).match(/^(?:第)?([一二三四五六七八九十]|\d+)(?:冊|册)?$/);
+ let book=m?('一二三四五六七八九十'.indexOf(m[1])+1||Number(m[1])):0;
+ if(q.grade==='國一'&&norm(q.unit)==='數與數線')book=1;
+ if(!book&&g>=0&&g<3&&u>=0)book=g*2+1+(u>=[3,4,3][g]?1:0);
+ const ch=norm(q.chapter).match(/^(\d+)[-－–.．]/);
+ return [l<0?99:l,book||99,g<0?99:g,u<0?999:u,ch?Number(ch[1]):999];
+}
+function groupedCourseOptions(sel,rows,field,all){
+ const cmp=(a,b)=>a.localeCompare(b,'zh-TW',{numeric:true,sensitivity:'base'});
+ const rankCmp=(a,b)=>{for(let i=0;i<a.length;i++)if(a[i]!==b[i])return a[i]-b[i];return 0};
+ const entries=new Map();
+ for(const q of rows){const name=String(q[field]??'');if(!name.trim())continue;const r=courseRank(q);const old=entries.get(name);if(!old||rankCmp(r,old)<0)entries.set(name,r);}
+ const sorted=[...entries].sort(([a,x],[b,y])=>rankCmp(field==='chapter'?x.slice(0,3):x,field==='chapter'?y.slice(0,3):y)||cmp(a,b));
+ sel.replaceChildren(new Option(all,all));const groups=new Map();
+ for(const [name,r] of sorted){const key=r.slice(0,2).join(':');let group=groups.get(key);if(!group){group=document.createElement('optgroup');const book=r[1];group.label= ( $('level').value==='全部'?(['國小','國中','高中'][r[0]]||'其他')+'｜':'')+(book===99?'未分類冊別':'第'+('一二三四五六七八九十'[book-1]||book)+'冊');groups.set(key,group);sel.appendChild(group);}group.appendChild(new Option(name,name));}
+ return sorted.map(([name])=>name);
+}
+function render(){renderStats();let level=$('level').value,grade=$('grade').value,unitBefore=$('unit').value;let units=groupedCourseOptions($('unit'),data.filter(q=>(level==='全部'||q.level===level)&&(grade==='全部年級'||q.grade===grade)),'unit','全部單元');if(unitBefore&&unitBefore!=='全部單元'&&!units.includes(unitBefore)){const option=document.createElement('option');option.value=unitBefore;option.textContent=unitBefore;$('unit').appendChild(option)}if(unitBefore)$('unit').value=unitBefore;let unit=$('unit').value,q=$('search').value.trim().toLowerCase(),difficulty=$('difficultyFilter').value;let chapterBefore=$('chapterFilter').value;let chapterRows=data.filter(x=>(level==='全部'||x.level===level)&&(grade==='全部年級'||x.grade===grade)&&(unit==='全部單元'||x.unit===unit));let chapters=groupedCourseOptions($('chapterFilter'),chapterRows,'chapter','全部章節');if(chapters.includes(chapterBefore))$('chapterFilter').value=chapterBefore;let chapter=$('chapterFilter').value;let rows=data.filter(x=>($('featuredFilter').getAttribute('aria-pressed')!=='true'||isFeatured(x))&&(chapter==='全部章節'||String(x.chapter??'').trim()===chapter)&&(difficulty==='全部難度'||normalizeDifficulty(x.difficulty)===difficulty)&&(level==='全部'||x.level===level)&&(grade==='全部年級'||x.grade===grade)&&(unit==='全部單元'||x.unit===unit)&&(!q||[x.title,x.body,x.unit,x.chapter,x.tags,x.source,x.sourceType,x.school,x.year,x.exam,x.sourceDisplay,sourceLabel(x)].join(' ').toLowerCase().includes(q)));$('resultCount').textContent=`找到 ${rows.length} 題`;$('results').innerHTML=rows.length?rows.map(x=>`<article class="question"><div class="meta"><span class="tag">${esc(x.grade)}</span><span class="tag">${esc(x.unit)}</span><span class="tag difficulty-badge difficulty-${esc(normalizeDifficulty(x.difficulty))}">${esc(normalizeDifficulty(x.difficulty))}</span>${starMarkup(x)}<span class="muted">${esc([sourceCategory(x), sourceLabel(x)].filter(Boolean).join('｜'))}</span></div><div class="body">${sectionMarkup(x.body,imagesOf(x,'body'))}</div><footer><button class="outline" onclick="edit('${x.id}')">編輯題目</button><button class="outline delete-btn" onclick="removeQuestion('${x.id}')">刪除</button></footer></article>`).join(''):'<div class="panel empty">沒有符合條件的題目。請確認學制與年級，或清除關鍵字。</div>';typeset()};function mathSegments(text){text=String(text??'').replace(/\\\$/g,'$');
+ const rx=/(\$\$[\s\S]+?\$\$|\$[^$\n]+\$|\\\([\s\S]+?\\\)|\\\[[\s\S]+?\\\])/g;
+ let out=[],last=0,m;while((m=rx.exec(text))){if(m.index>last)out.push({text:text.slice(last,m.index)});let s=m[0];out.push({math:s.startsWith('$$')?s.slice(2,-2):s.startsWith('$')?s.slice(1,-1):s.slice(2,-2),display:s.startsWith('$$')||s.startsWith('\\[')});last=rx.lastIndex;}if(last<text.length)out.push({text:text.slice(last)});return out;
+}
+function unboxMath(expr){
+ // Presentation-only: never modify the user's stored LaTeX.
+ let result='',i=0;
+ while(i<expr.length){
+  const marker='\\boxed{';
+  if(expr.startsWith(marker,i)){
+   let j=i+marker.length,depth=1;
+   for(;j<expr.length&&depth>0;j++){
+    if(expr[j]==='{'&&expr[j-1]!=='\\')depth++;
+    else if(expr[j]==='}'&&expr[j-1]!=='\\')depth--;
+   }
+   if(depth===0){result+=unboxMath(expr.slice(i+marker.length,j-1));i=j;continue;}
+  }
+  result+=expr[i++];
+ }
+ return result;
+}
+function renderTextMath(el,value){
+ el.replaceChildren();if(!window.katex){el.textContent=value;return;}
+ const putMath=(expr,display=false)=>{expr=unboxMath(expr).replace(/\\frac\b/g,'\\dfrac');let span=document.createElement(display?'div':'span');try{katex.render(expr,span,{throwOnError:true,displayMode:display,trust:false,output:'html'})}catch(e){span.textContent=expr;}el.appendChild(span)};
+ for(let part of mathSegments(value.replace(/\n[ \t]*(?=\$\$)/g,'').replace(/(\$\$)\n[ \t]*/g,'$1'))){
+  if(part.math!==undefined){putMath(part.math,part.display);continue;}
+  // Detect common complete algebraic expressions and isolated function calls.
+  // Keep prose as normal text; never treat f(x) and f(3) differently.
+  const re=/(\\(?:frac|dfrac|sqrt|sum|int|lim|pi|theta|alpha|beta|times|cdot|angle|overline)\s*(?:\{[^{}]*\}){0,2}|[A-Za-z][A-Za-z0-9]*\([^()\n]*\)(?:\s*[=+\-*/^_]\s*(?:[A-Za-z0-9{}()^_+\-*/.]+))*|[A-Za-z0-9]+(?:\s*[=+\-*/^_]\s*[A-Za-z0-9{}()^_+\-*/.]+)+)/g;
+  let last=0,m;while((m=re.exec(part.text))){if(m.index>last)el.appendChild(document.createTextNode(part.text.slice(last,m.index)));putMath(m[0]);last=re.lastIndex;}if(last<part.text.length)el.appendChild(document.createTextNode(part.text.slice(last)));
+ }
+}
+function typeset(){document.querySelectorAll('.mathtext').forEach(el=>renderTextMath(el,el.dataset.rawMath||el.textContent));cleanDisplayed(document)}
+
+// 舊版 v3.5/v3.6 的過渡詳解更新已由最終 v3.9 更新取代。
+const REFLECTION_V37 = "直線 $L_1:x+2y+3=0$ 對直線 $y=x$ 對稱後，交換 $x,y$ 可得\n$$L_2:2x+y+3=0$$\n設兩定點為 $A(3,-4)$、$B(2,3)$。將 $A$ 對直線 $L_2$ 反射，設對稱點為 $A'(x',y')$。\n對直線 $ax+by+c=0$，先求\n$$t=\\dfrac{ax_0+by_0+c}{a^2+b^2}$$\n本題 $a=2$、$b=1$、$c=3$，且 $A(3,-4)$，故\n$$t=\\dfrac{2\\times3+1\\times(-4)+3}{2^2+1^2}=1$$\n再代入對稱點公式 $x'=x_0-2at$、$y'=y_0-2bt$，得\n$$\\begin{aligned}x'&=3-2\\times2\\times1=-1\\\\[5pt]y'&=-4-2\\times1\\times1=-6\\end{aligned}$$\n因此 $A'(-1,-6)$。\n對任意 $P\\in L_2$，因 $PA=PA'$，由三角不等式得\n$$PA+PB=PA'+PB\\ge A'B$$\n且線段 $\\overline{A'B}$ 與直線 $L_2$ 相交，故等號可成立。\n因此最小值為\n$$A'B=\\sqrt{(-1-2)^2+(-6-3)^2}=3\\sqrt{10}$$";
+// V3.8: explicit one-time correction of the reflection solution only.
+// Back up the complete pre-change dataset and the exact original solution.
+(function upgradeReflectionV38(){
+ const flag='math_bank_reflection_corrected_v38';
+ try {
+  if(cloudMemory.getItem(flag)==='1')return;
+  const q=data.find(x=>x.id==='import111_3' || x.title==='直線對稱與距離和最小值');
+  if(!q)return;
+  const updated=REFLECTION_V37
+    .replace('\\ge A\'B', '\\ge \\overline{A\'B}')
+    .replace('$$A\'B=\\sqrt', '$$\\overline{A\'B}=\\sqrt');
+  // Store the original content even if earlier migration flags were already set.
+  const original=cloudMemory.getItem(KEY);
+  if(original!==null)cloudMemory.setItem(KEY+'_before_reflection_v38',original);
+  cloudMemory.setItem('math_bank_reflection_original_solution_v38',q.solution||'');
+  const old=q.solution;
+  q.solution=updated;
+  if(!persist()){q.solution=old;return;}
+  cloudMemory.setItem(flag,'1');
+ }catch(err){console.warn('V3.8 solution update not applied; original preserved',err)}
+})();
+
+
+// V3.9: targeted correction, independent of older migration flags.
+// Only this question's solution changes; a full JSON snapshot is kept first.
+(function upgradeDistanceSumV39(){
+ const flag='math_bank_distance_sum_amgm_v39';
+ try {
+  if(cloudMemory.getItem(flag)==='1')return;
+  const q=data.find(x=>x.id==='import111_4') || data.find(x=>
+    /距離平方和/.test(x.title||'') && /y\s*=\s*mx/.test(x.body||''));
+  if(!q)return;
+  const revised=String.raw`三點 $A(1,2)$、$B(3,1)$、$C(2,3)$ 到直線 $y=mx$ 的距離平方和為
+$$S=\left(\dfrac{|m-2|}{\sqrt{m^2+1}}\right)^2+\left(\dfrac{|3m-1|}{\sqrt{m^2+1}}\right)^2+\left(\dfrac{|2m-3|}{\sqrt{m^2+1}}\right)^2$$
+$$=\dfrac{14m^2-22m+14}{m^2+1}$$
+因 $m>0$，可得
+$$S=14-22\times\dfrac{1}{m+\dfrac1m}$$
+由算術平均數與幾何平均數不等式，
+$$m+\dfrac1m\ge 2\sqrt{m\times\dfrac1m}$$
+故
+$$S\ge 14-22\times\dfrac{1}{2\sqrt{m\times\dfrac1m}}=3$$
+當 $m=1$ 時等號成立，故最小值為 $3$。`;
+  const original=cloudMemory.getItem(KEY);
+  if(original!==null)cloudMemory.setItem(KEY+'_before_distance_sum_v39',original);
+  cloudMemory.setItem('math_bank_distance_sum_original_solution_v39',q.solution||'');
+  const old=q.solution;
+  q.solution=revised;
+  if(!persist()){q.solution=old;return;}
+  cloudMemory.setItem(flag,'1');
+ }catch(err){console.warn('V3.9 distance sum update failed; previous data retained',err)}
+})();
+
+
+let editorImages={body:[],answer:[],solution:[]};
+function imagesOf(q,section){
+ const raw=q&&q.images&&Array.isArray(q.images[section])?q.images[section]:[];
+ const arr=raw.map(im=>typeof im==='string'?{src:im,width:65}:im).filter(im=>im&&typeof im.src==='string'&&im.src.trim());
+ if(section==='body'&&q&&q.figure&&!arr.some(im=>im.src===q.figure))return [{src:q.figure,width:Math.min(100,Math.round((q.figureWidth||400)/6)),legacy:true},...arr];
+ return arr;
+}
+const backgroundCache=new Map();
+function cleanImage(src){
+ if(backgroundCache.has(src))return backgroundCache.get(src);
+ const task=new Promise(resolve=>{const im=new Image();im.onerror=()=>resolve(src);im.onload=()=>{try{
+ const c=document.createElement('canvas');c.width=im.naturalWidth;c.height=im.naturalHeight;if(c.width*c.height>4000000)return resolve(src);
+ const ctx=c.getContext('2d');ctx.drawImage(im,0,0);const d=ctx.getImageData(0,0,c.width,c.height),p=d.data,w=c.width,h=c.height,n=w*h;
+ const corners=[0,w-1,n-w,n-1].map(i=>Array.from(p.slice(i*4,i*4+4)));const bg=corners[0];
+ if(bg[3]<250||Math.min(...bg.slice(0,3))<220||Math.max(...bg.slice(0,3))-Math.min(...bg.slice(0,3))>18||corners.some(v=>v.slice(0,3).some((x,j)=>Math.abs(x-bg[j])>12)))return resolve(src);
+ const seen=new Uint8Array(n),queue=new Int32Array(n);let head=0,tail=0;
+ function add(i){if(seen[i])return;seen[i]=1;let k=i*4;if(p[k+3]<250||Math.max(...[0,1,2].map(j=>Math.abs(p[k+j]-bg[j])))>12)return;queue[tail++]=i;}
+ for(let x=0;x<w;x++){add(x);add(n-w+x)}for(let y=0;y<h;y++){add(y*w);add(y*w+w-1)}
+ while(head<tail){let i=queue[head++];p[i*4+3]=0;if(i%w)add(i-1);if(i%w<w-1)add(i+1);if(i>=w)add(i-w);if(i<n-w)add(i+w)}
+ ctx.putImageData(d,0,0);resolve(c.toDataURL('image/png'));
+ }catch(e){resolve(src)}};im.src=src});backgroundCache.set(src,task);return task;
+}
+function imageMarkup(images){return (images||[]).map(im=>`<img class="embedded-img" src="${esc(im.src)}" alt="題目附圖" style="width:${(166*Math.max(10,Math.min(100,Number(im.width)||65))/100).toFixed(2)}mm;${im.layout==='inline'?'display:inline-block;vertical-align:middle;margin:1mm 1mm 1mm 0;':''}">`).join('')}
+function cleanDisplayed(root){root.querySelectorAll('img.embedded-img').forEach(im=>{const src=im.getAttribute('src');cleanImage(src).then(v=>{if(im.getAttribute('src')===src)im.src=v})})}
+function sectionMarkup(raw,images){const node=document.createElement('div');let used=new Set(),last=0;const re=/\[圖:(\d+)\]/g;let m;function textPart(t){if(!t)return;const part=document.createElement('span');renderTextMath(part,t);node.append(...part.childNodes)}while((m=re.exec(raw||''))){textPart(raw.slice(last,m.index));let i=Number(m[1])-1;if(images[i]){node.insertAdjacentHTML('beforeend',imageMarkup([images[i]]));used.add(i)}else node.appendChild(document.createTextNode(m[0]));last=re.lastIndex}textPart((raw||'').slice(last));node.insertAdjacentHTML('beforeend',imageMarkup(images.filter((_,i)=>!used.has(i))));return node.innerHTML}
+function imageField(section){return $('edit'+({body:'Body',answer:'Answer',solution:'Solution'}[section]))}
+function placeImage(section,i){const el=imageField(section),token='[圖:'+(i+1)+']';let a=el.selectionStart,b=el.selectionEnd;const old=el.value;const before=old.slice(0,a).replaceAll(token,''),after=old.slice(b).replaceAll(token,'');el.value=before+token+after;el.focus();el.setSelectionRange(before.length+token.length,before.length+token.length);preview()}
+function setImageLayout(section,i,v){editorImages[section][i].layout=v;preview()}
+function showEditorImages(){
+ for(const section of ['body','answer','solution']){
+  const list=$('imageList-'+section);if(!list)continue;
+  list.innerHTML=editorImages[section].map((im,i)=>`<div class="img-item"><img src="${esc(im.src)}" alt="圖片預覽"><label>列印基準寬度 <input type="range" min="10" max="100" step="5" value="${im.width||65}" oninput="resizeEditorImage('${section}',${i},this.value)"><span id="size-${section}-${i}">${im.width||65}%</span></label><select aria-label="排列方式" onchange="setImageLayout('${section}',${i},this.value)"><option value="block" ${im.layout!=='inline'?'selected':''}>獨立一行</option><option value="inline" ${im.layout==='inline'?'selected':''}>同排</option></select><button class="outline" onclick="placeImage('${section}',${i})">插入游標位置</button><button class="outline" onclick="removeEditorImage('${section}',${i})">移除圖片</button></div>`).join('');
+ }
+}
+function resizeEditorImage(section,index,width){editorImages[section][index].width=Number(width);$('size-'+section+'-'+index).textContent=width+'%';preview()}
+function removeEditorImage(section,index){if(!confirm('確定移除這張圖片嗎？儲存前可使用清除復原；原題庫尚未變更。'))return;imageField(section).value=imageField(section).value.replace(/\[圖:(\d+)\]/g,(m,n)=>Number(n)===index+1?'':Number(n)>index+1?'[圖:'+(Number(n)-1)+']':m);editorImages[section].splice(index,1);showEditorImages();preview()}
+async function addEditorImages(section,input){
+ const files=Array.from(input.files||[]);input.value='';
+ for(const file of files){
+  if(!file.type.startsWith('image/')){alert('請選擇圖片檔案。');continue}
+  try{
+   const img=await createImageBitmap(file);
+   const ratio=Math.min(1,1500/img.width,1500/img.height);const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(img.width*ratio));canvas.height=Math.max(1,Math.round(img.height*ratio));canvas.getContext('2d').drawImage(img,0,0,canvas.width,canvas.height);img.close();
+   const src=canvas.toDataURL('image/webp',0.82);
+   editorImages[section].push({src,width:65});
+  }catch(e){alert('圖片讀取失敗：'+e.message)}
+ }
+ showEditorImages();preview();
+}
+function attachPreviewImages(){for(const [section,id] of [['body','preview'],['answer','answerPreview'],['solution','solutionPreview']]){const el=$(id);el.innerHTML=sectionMarkup(el.dataset.rawMath||'',editorImages[section]);cleanDisplayed(el)}}
+
+function preview(){let el=$('preview');let value=$('editBody').value||'輸入題目後，這裡會顯示預覽。';el.dataset.rawMath=value;renderTextMath(el,value);for(const [inputId,outputId,empty] of [['editAnswer','answerPreview','輸入答案後，這裡會顯示預覽。'],['editSolution','solutionPreview','輸入詳解後，這裡會顯示預覽。']]){const target=$(outputId);if(target){const raw=$(inputId).value||empty;target.dataset.rawMath=raw;renderTextMath(target,raw);}}attachPreviewImages();let status=$('mathStatus');if(status)status.textContent=window.katex?'數學公式已啟用。建議用 $...$ 標示公式，可確保複雜算式正確顯示。':'公式元件尚未載入。請確認網路連線後重新開啟檔案。'}
+let editorClearSnapshot=null;
+function confirmClearEditor(){
+ const fields=['editLevel','editGrade','editBook','editChapter','editUnit','editType','editDifficulty','editSource','editSourceType','editSchool','editYear','editExam','editSourceDisplay','editTitle','editBody','editAnswer','editSolution','editTags'];
+ if(!confirm('確定要清除目前編輯中的內容嗎？\n\n尚未儲存的修改會從畫面消失。\n已儲存的題庫題目不會被刪除。\n取消可繼續編輯。'))return;
+ editorClearSnapshot={editing,values:Object.fromEntries(fields.map(k=>[k,$(k).value])),images:structuredClone(editorImages)};
+ resetEditor();$('undoEditorClear').classList.remove('hidden');
+}
+function undoEditorClear(){
+ if(!editorClearSnapshot)return;
+ const snap=editorClearSnapshot;editorClearSnapshot=null;
+ $('editLevel').value=snap.values.editLevel;editLevelChanged();
+ Object.entries(snap.values).forEach(([k,v])=>{if(k!=='editLevel')$(k).value=v});
+ editing=snap.editing;editorImages=structuredClone(snap.images||{body:[],answer:[],solution:[]});showEditorImages();$('editorTitle').textContent=editing?'編輯數學題目':'新增數學題目';
+ $('undoEditorClear').classList.add('hidden');preview();
+}
+function resetEditor(){editorImages={body:[],answer:[],solution:[]};showEditorImages();editing=null;$('editorTitle').textContent='新增數學題目';['editBook','editChapter','editUnit','editTitle','editBody','editAnswer','editSolution','editSource','editTags','editSchool','editYear','editExam','editSourceDisplay'].forEach(k=>$(k).value='');$('editLevel').value='國中';editLevelChanged();$('editGrade').value='國二';$('editDifficulty').value='易';$('editType').value='計算題';fillSourceEditor('題庫');preview()};function save(){if($('editLevel').value!=='國小'&&!['第一冊','第二冊','第三冊','第四冊','第五冊','第六冊'].includes($('editBook').value)){alert('請先選擇第一冊至第六冊。');$('editBook').focus();return}editorClearSnapshot=null;$('undoEditorClear').classList.add('hidden');let body=$('editBody').value.trim(),unit=$('editUnit').value.trim();let title=$('editTitle').value.trim()||body.replace(/\$|\\[a-zA-Z]+/g,'').slice(0,40)||'未命名題目';if(!body||!unit){alert('請先填寫題目內容及單元。');return}let item={...(editing?data.find(x=>x.id===editing):{}),id:editing||('q'+Date.now()),level:$('editLevel').value,grade:$('editGrade').value,unit,chapter:$('editChapter').value.trim(),book:$('editBook').value,type:$('editType').value,difficulty:$('editDifficulty').value,title,body,answer:$('editAnswer').value,solution:$('editSolution').value,source:$('editSource').value,sourceType:editing&&sourceCategory(data.find(x=>x.id===editing))===$('editSourceType').value?data.find(x=>x.id===editing).sourceType:$('editSourceType').value,school:$('editSchool').value,year:$('editYear').value,exam:$('editExam').value,sourceDisplay:$('editSourceDisplay').value.trim(),tags:$('editTags').value,figure:'',images:structuredClone(editorImages)};const before=data.slice();if(editing)data=data.map(x=>x.id===editing?item:x);else data.unshift(item);if(!persist()){data=before;return}editing=item.id;$('editorTitle').textContent='編輯數學題目';renderStats();showSaveNotice('✓ 儲存成功！題目已寫入此瀏覽器。題庫目前共有 '+data.length+' 題。')};function edit(id){let x=data.find(x=>x.id===id);if(!x)return;go('new');editing=id;$('editorTitle').textContent='編輯數學題目';$('editLevel').value=x.level;editLevelChanged();$('editGrade').value=x.grade;if(x.book&&!Array.from($('editBook').options).some(o=>o.value===x.book))$('editBook').add(new Option(x.book,x.book));$('editBook').value=x.book||'';$('editType').value=x.type||'計算題';fillSourceEditor(sourceCategory(x));$('editSchool').value=x.school||'';$('editYear').value=x.year||'';$('editExam').value=x.exam||'';$('editSourceDisplay').value=x.sourceDisplay||'';for(let k of ['Chapter','Unit','Difficulty','Title','Body','Answer','Solution','Source','Tags'])$('edit'+k).value=k==='Difficulty'?normalizeDifficulty(x.difficulty):(x[k.toLowerCase()]??'');editorImages={body:structuredClone(imagesOf(x,'body')),answer:structuredClone(imagesOf(x,'answer')),solution:structuredClone(imagesOf(x,'solution'))};showEditorImages();$('answerDetail').open=true;$('solutionDetail').open=true;preview()};function saveTrash(next){try{const raw=JSON.stringify(next);cloudMemory.setItem(TRASH_KEY,raw);if(cloudMemory.getItem(TRASH_KEY)!==raw)throw Error('垃圾桶寫入驗證失敗');return true}catch(e){alert('無法儲存垃圾桶：'+e.message+'。題目尚未刪除。');return false}}
+function trashLabel(x){return [x.grade,x.unit,x.exam].filter(Boolean).join('｜')||'已刪除題目'}
+function removeQuestion(id){
+ const x=data.find(q=>q.id===id);if(!x)return;
+ if(!confirm(`確定將「${trashLabel(x)}」移到垃圾桶嗎？\n\n題目不會永久刪除，可以到左側「垃圾桶」還原。`))return;
+ const nextTrash=[{...x,deletedAt:new Date().toISOString()},...trash.filter(q=>q.id!==id)];
+ if(!saveTrash(nextTrash))return;
+ const oldData=data;data=data.filter(q=>q.id!==id);
+ if(!persist()){data=oldData;saveTrash(trash);return}
+ trash=nextTrash;chosen.delete(id);if(editing===id)resetEditor();render();updateTrashCount();showSaveNotice('題目已移至垃圾桶，可隨時還原。');
+}
+function updateTrashCount(){const count=trash.length;const a=$('trashNavCount');if(a)a.textContent=count?'('+count+')':'';const b=$('trashCount');if(b)b.textContent=`垃圾桶目前有 ${count} 題`;const btn=$('emptyTrashButton');if(btn)btn.disabled=!count}
+function renderTrash(){updateTrashCount();$('trashList').innerHTML=trash.length?trash.map(q=>`<article class="question"><div class="meta"><span class="tag">${esc(q.level||'')}</span><span class="tag">${esc(q.grade||'')}</span><span class="tag">${esc(q.unit||'')}</span><span class="muted">刪除時間：${esc(q.deletedAt?new Date(q.deletedAt).toLocaleString('zh-TW'):'未記錄')}</span></div><h3>${esc(q.title)}</h3><div class="body mathtext" data-raw-math="${esc(q.body||'')}">${esc(q.body||'')}</div><footer><button class="outline" onclick="restoreQuestion('${q.id}')">還原題目</button><button class="outline delete-btn" onclick="permanentlyDeleteQuestion('${q.id}')">永久刪除</button></footer></article>`).join(''):'<div class="empty">垃圾桶是空的。</div>';typeset()}
+function restoreQuestion(id){const q=trash.find(x=>x.id===id);if(!q)return;
+ if(data.some(x=>x.id===id)){alert('題庫中已有相同 ID 的題目，為避免覆蓋，暫時無法還原。');return}
+ const restored={...q};delete restored.deletedAt;
+ const oldData=data;data=[restored,...data];if(!persist()){data=oldData;return}
+ const next=trash.filter(x=>x.id!==id);if(!saveTrash(next)){data=oldData;persist();return}
+ trash=next;renderTrash();renderStats();showSaveNotice('已還原「'+trashLabel(q)+'」至題庫。')}
+function emptyTrash(){
+ if(!trash.length)return;
+ if(!confirm(`確定永久刪除垃圾桶內全部 ${trash.length} 題嗎？\n\n此操作無法復原，正式題庫不受影響。`))return;
+ if(!saveTrash([]))return;
+ trash=[];renderTrash();showSaveNotice('垃圾桶已清空。');
+}
+function permanentlyDeleteQuestion(id){const q=trash.find(x=>x.id===id);if(!q)return;
+ if(!confirm(`確定永久刪除「${trashLabel(q)}」嗎？\n\n此操作無法從垃圾桶復原，請確認已備份。`))return;
+ const next=trash.filter(x=>x.id!==id);if(!saveTrash(next))return;
+ trash=next;renderTrash();showSaveNotice('題目已永久刪除。')}
+;function toggle(id){chosen.has(id)?chosen.delete(id):chosen.add(id);render()};function renderSelected(){let rows=[...chosen].map(id=>data.find(x=>x.id===id)).filter(Boolean);$('selectionList').innerHTML=rows.length?rows.map((x,i)=>`<article class="question"><div class="meta"><span class="tag">第 ${i+1} 題</span><span class="tag">${esc(x.unit)}</span>${starMarkup(x)}</div><div class="body">${sectionMarkup(x.body,imagesOf(x,'body'))}</div><footer><button class="outline" onclick="chosen.delete('${x.id}');renderSelected()">移出選題</button></footer></article>`).join(''):'<div class="panel empty" style="margin-top:20px">目前沒有選取題目，請先到「瀏覽題目」加入。</div>';typeset()};const SELECTION_UNDO_KEY='math_bank_selection_undo_v43';
+let lastClearedSelection=null;
+try{const old=JSON.parse(sessionStorage.getItem(SELECTION_UNDO_KEY)||'null');if(Array.isArray(old))lastClearedSelection=old;}catch(e){}
+function updateUndoClearButton(){const btn=$('undoClearSelection');if(btn)btn.classList.toggle('hidden',!lastClearedSelection?.length)}
+function clearSelected(){
+ if(!chosen.size){alert('目前沒有已選題目。');return;}
+ if(!confirm(`確定清空「組成考卷」中的 ${chosen.size} 題嗎？\n\n只會移除組卷選題，不會刪除題庫原始題目。\n清空後可按「復原上次清空」。`))return;
+ lastClearedSelection=[...chosen];
+ try{sessionStorage.setItem(SELECTION_UNDO_KEY,JSON.stringify(lastClearedSelection))}catch(e){}
+ chosen.clear();renderSelected();updateUndoClearButton();
+}
+function undoClearSelected(){
+ if(!lastClearedSelection?.length)return;
+ for(const id of lastClearedSelection){if(data.some(q=>q.id===id))chosen.add(id)}
+ lastClearedSelection=null;
+ try{sessionStorage.removeItem(SELECTION_UNDO_KEY)}catch(e){}
+ renderSelected();updateUndoClearButton();
+}
+async function printSelected(teacher=false){
+ const rows=[...chosen].map(id=>data.find(x=>x.id===id)).filter(Boolean);
+ if(!rows.length){alert('請先選取題目');return;}
+ if(!window.katex){alert('數學公式尚未載入，請確認網路連線後再列印。');return;}
+ // Reuse exactly the same LaTeX parser as the editor and question bank.
+ const printableMath=(raw)=>{const node=document.createElement('div');renderTextMath(node,raw||'');return node.innerHTML;};
+ const css=`@page{size:A4 portrait;margin:17mm 17mm 18mm;@top-left{content:none}@top-center{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-center{content:none}@bottom-right{content:none}}
+ *{box-sizing:border-box}html,body{margin:0;padding:0;color:#161616;background:#fff}
+ body{font-family:'Noto Serif TC','PMingLiU','Times New Roman',serif;font-size:12pt;line-height:1.65}
+ h1{text-align:center;font-size:20pt;letter-spacing:.09em;margin:0 0 15mm;font-weight:700}
+ article{break-inside:avoid-page;page-break-inside:avoid;margin:0 0 10mm;padding:0}
+ .qtitle{font-size:12pt;font-weight:700;margin-bottom:3mm}
+ .printmath{font-size:12pt;white-space:pre-wrap;overflow-wrap:break-word;line-height:1.9}
+ .printmath .katex{font-size:1.04em;vertical-align:baseline;line-height:normal} .printmath .katex .mfrac{font-size:inherit!important}
+ .printmath .katex-display{margin:.3em 0;padding:.08em 0;overflow:visible;break-inside:avoid}
+ .printmath .katex-display>.katex{white-space:nowrap;max-width:100%}
+ .embedded-img{display:block;max-width:100%;height:auto;object-fit:contain;margin:2.5mm 0}
+ .sol{margin-top:6mm;padding:3mm 4mm;background:#f4f4f4;border-left:2px solid #999;break-inside:avoid-page}
+ .sol-label{font-weight:700;margin:0 0 1mm}
+ .sol .printmath{margin-bottom:3mm}
+ .sol{isolation:isolate}
+ .sol img{mix-blend-mode:multiply;background:transparent}
+ @media screen{body{max-width:210mm;margin:20px auto;padding:17mm;box-shadow:0 2px 15px #0002}}
+ @media print{.sol{-webkit-print-color-adjust:exact;print-color-adjust:exact}}`;
+ const w=window.open('','_blank');if(!w){alert('請允許瀏覽器開啟新視窗');return;}
+ const prepared=await Promise.all(rows.map(async q=>{const images={};for(const section of ['body','answer','solution'])images[section]=await Promise.all(imagesOf(q,section).map(async im=>({...im,src:await cleanImage(im.src)})));return {...q,figure:null,images}}));
+ const cards=prepared.map((x,i)=>`<article><div class="qtitle">第 ${i+1} 題</div><div class="printmath">${sectionMarkup(x.body,imagesOf(x,'body'))}</div>${teacher?`<div class="sol"><div class="sol-label">答：</div><div class="printmath">${sectionMarkup(x.answer,imagesOf(x,'answer'))}</div><div class="sol-label">解：</div><div class="printmath">${sectionMarkup(x.solution,imagesOf(x,'solution'))}</div></div>`:''}</article>`).join('');
+ const html=`<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><title>數學練習卷${teacher?'（教師版）':''}</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"><style>${css}</style></head><body><h1>數學練習卷${teacher?'（教師版）':''}</h1>${cards}<script>(async()=>{await Promise.all(Array.from(document.images).map(img=>img.complete?Promise.resolve():new Promise(r=>{img.onload=r;img.onerror=r})));try{await document.fonts.ready}catch(e){};setTimeout(()=>window.print(),180)})();<\/script></body></html>`;
+ w.document.open();w.document.write(html);w.document.close();
+}
+function exportData(){let blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='我的數學題庫備份.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}function compact(v){return String(v??'').normalize('NFKC').replace(/\s+/g,'').replace(/臺/g,'台')}
+function rawPaper(q){
+ const label=String(q.sourceDisplay||q.source||[q.year,q.school,q.exam].filter(Boolean).join(' ')).trim();
+ if(!q.paperId&&!q.school&&!q.sourceDisplay)return null;
+ if(!label&&!q.paperId)return null;
+ const n=compact(label), context=compact([q.source,q.exam,q.school,q.sourceDisplay].join(' '));
+ const known=[
+ ['111-1 臺中一中高一第二次段考',/^111(?:-1)?台中一中(?:高一第二次段考(?:數學)?)?$/],
+ ['111-1 臺中女中高一第二次段考',/^111(?:-1)?台中女中(?:高一第二次段考(?:數學)?)?$/],
+ ['111-1 衛道第二次多元',/^111(?:-1)?衛道(?:中學)?(?:第二次)?多元(?:競試)?(?:數學)?$/],
+ ['112-1 明道國二第二次段考',/^112(?:-1)?明道(?:中學)?國二第二次段考(?:數學)?$/],
+ ['113-1 衛道國二第二次段考',/^113-1衛道(?:中學)?國二第二次段考(?:數學)?$/]
+ ];
+ const hit=known.find(([name,re])=>re.test(n)||re.test(compact(q.source)));
+ if(hit)return {key:'known:'+compact(hit[0]),label:hit[0]};
+ return {key:'source:'+compact([q.level,q.grade,q.sourceType,label||q.paperId].join('|')),label:label||String(q.paperId)};
+}
+function paperInfo(q){const p=rawPaper(q);if(q.paperGroup&&q.paperName)return {key:q.paperGroup,label:q.paperName};if(!p)return null;const alias=[...data,...trash].find(x=>x.paperGroup&&x.paperName&&Array.isArray(x.paperAliases)&&x.paperAliases.includes(p.key));return alias?{key:alias.paperGroup,label:alias.paperName}:p}
+let paperRows=[];
+function renderPapers(){const groups=new Map();let standalone=0;for(const q of data){const p=paperInfo(q);if(!p){standalone++;continue}const g=groups.get(p.key)||{key:p.key,label:p.label,count:0};g.count++;groups.set(p.key,g)}const term=compact($('paperSearch').value);paperRows=[...groups.values()].filter(g=>compact(g.label).includes(term)).sort((a,b)=>a.label.localeCompare(b.label,'zh-TW',{numeric:true}));$('paperList').innerHTML=`<div class="toolbar" style="margin:12px 0"><button class="outline" onclick="editPaperGroups(false)">重新命名</button><button class="outline" onclick="editPaperGroups(true)">合併考卷</button></div><div class="muted" style="margin-bottom:10px">題庫共 ${data.length} 題｜考卷題目 ${data.length-standalone} 題｜獨立題目 ${standalone} 題</div><table style="width:100%;border-collapse:collapse;text-align:left"><thead><tr><th style="width:42px"></th><th>考卷名稱</th><th style="width:100px">收錄題數</th></tr></thead><tbody>${paperRows.map((g,i)=>`<tr style="border-bottom:1px solid #ddd"><td style="padding:10px 0"><input type="checkbox" class="paperPick" value="${i}" aria-label="選取考卷" style="width:auto"></td><td>${esc(g.label)}</td><td>${g.count} 題</td></tr>`).join('')}${standalone&&(!term||compact('獨立題目').includes(term))?`<tr><td></td><td>獨立題目（未歸入考卷）</td><td>${standalone} 題</td></tr>`:''}</tbody></table>`}
+function editPaperGroups(merge){const selected=[...document.querySelectorAll('.paperPick:checked')].map(el=>paperRows[Number(el.value)]);if(merge?selected.length<2:selected.length!==1){alert(merge?'請至少選取兩份考卷。':'請選取一份考卷。');return}const name=prompt('請輸入統一的考卷名稱',selected[0].label)?.trim();if(!name)return;const keys=new Set(selected.map(x=>x.key));const targets=[...data,...trash].filter(q=>keys.has(paperInfo(q)?.key));const aliases=[...new Set(targets.flatMap(q=>[rawPaper(q)?.key,...(q.paperAliases||[])]).filter(Boolean))];const group=selected[0].key;const oldData=data,oldTrash=trash;const update=q=>targets.includes(q)?{...q,paperGroup:group,paperName:name,paperAliases:aliases}:q;data=data.map(update);const nextTrash=trash.map(update);if(!persist()){data=oldData;return}if(!saveTrash(nextTrash)){data=oldData;persist();return}trash=nextTrash;renderPapers();showSaveNotice('考卷名稱已更新，題目內容不變。')}
+function bodyKey(q){return String(q.body||'').normalize('NFC').replace(/\\(?:dfrac|tfrac)\b/g,'\\frac').replace(/\\(?:left|right)\b/g,'').replace(/\s+|\$/g,'')}
+function picKey(q){return JSON.stringify(imagesOf(q,'body').map(x=>x.src))}
+function grams(s){const a=new Set();for(let i=0;i<s.length-2;i++)a.add(s.slice(i,i+3));return a}
+function similarity(a,b){if(Math.min(a.length,b.length)<20)return 0;const x=grams(a),y=grams(b);let n=0;for(const v of x)if(y.has(v))n++;return 2*n/(x.size+y.size||1)}
+let pendingImport=null;
+function cancelImport(){pendingImport=null;$('importReview').classList.add('hidden');$('importMatches').innerHTML=''}
+function importData(ev){const f=ev.target.files[0];ev.target.value='';if(!f)return;const reader=new FileReader();reader.onload=()=>{try{const raw=JSON.parse(reader.result),arr=Array.isArray(raw)?raw:raw.questions;if(!Array.isArray(arr)||!arr.every(q=>q&&q.id&&q.level&&typeof q.body==='string'))throw Error('題目格式不正確');const pool=[...data.map(q=>({q,trash:false})),...trash.map(q=>({q,trash:true}))];const fresh=[],suspects=[];let duplicates=0;for(const q of arr){const body=bodyKey(q),pic=picKey(q);let exact=pool.find(x=>x.q.id===q.id||body&&body===bodyKey(x.q)&&pic===picKey(x.q)&&!(/如圖|下圖|附圖/.test(body)&&pic==='[]'));if(exact){duplicates++;continue}const p=paperInfo(q);const match=pool.find(x=>{const old=paperInfo(x.q);return (p&&old&&p.key===old.key&&q.originalQuestionNumber&&q.originalQuestionNumber===x.q.originalQuestionNumber)||(body&&body===bodyKey(x.q))||similarity(body,bodyKey(x.q))>=.85});if(match)suspects.push({q,match});else fresh.push(q);pool.push({q,trash:false})}pendingImport={fresh,suspects,duplicates};$('importSummary').textContent=`${f.name}：新題 ${fresh.length} 題，確認重複 ${duplicates} 題，疑似重複 ${suspects.length} 題。原有題目不覆蓋。`;$('importMatches').innerHTML=suspects.map(({q,match},i)=>`<div style="border:1px solid #ddd;padding:12px;margin:12px 0"><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div><strong>原有題目${match.trash?'（垃圾桶）':''}</strong><div class="mathtext" data-raw-math="${esc(match.q.body)}">${esc(match.q.body)}</div>${imageMarkup(imagesOf(match.q,'body'))}</div><div><strong>準備匯入</strong><div class="mathtext" data-raw-math="${esc(q.body)}">${esc(q.body)}</div>${imageMarkup(imagesOf(q,'body'))}</div></div><label><input type="checkbox" id="keepImport${i}"> 視為不同題目，仍然匯入</label></div>`).join('');$('importReview').classList.remove('hidden');typeset()}catch(e){alert('匯入失敗：'+e.message)}};reader.readAsText(f)}
+function commitImport(){if(!pendingImport)return;const {fresh,suspects}=pendingImport;const added=[...fresh,...suspects.filter((x,i)=>$('keepImport'+i).checked).map(x=>x.q)];const before=data;const ids=new Set([...data,...trash].map(q=>q.id));const next=[];for(const q of added){if(ids.has(q.id))continue;ids.add(q.id);const p=paperInfo(q);const alias=p&&[...data,...trash].find(x=>x.paperGroup===p.key&&x.paperName);next.push({...q,...(alias?{paperGroup:alias.paperGroup,paperName:alias.paperName,paperAliases:alias.paperAliases}:{}),importedAt:q.importedAt||new Date().toISOString()})}data=[...data,...next];if(!persist()){data=before;renderStats();return}cancelImport();renderPapers();showSaveNotice('已新增 '+next.length+' 題，原有題目保留。')}
+;$('level').value='全部';changeLevel();editLevelChanged();go('home');window.addEventListener('load',()=>{typeset();preview();});
+
+function insertFormula(token){let el=$('editBody');let a=el.selectionStart,b=el.selectionEnd;let val=el.value;el.value=val.slice(0,a)+token+val.slice(b);el.focus();el.setSelectionRange(a+token.length,a+token.length);preview()}
+function renderStats(){let counts=['國小','國中','高中'].map(l=>data.filter(x=>x.level===l).length);['statPrimary','statJunior','statSenior'].forEach((id,i)=>$(id).textContent=counts[i]);$('statTotal').textContent=data.length}
+const originalGo=go;go=function(page){originalGo(page);renderStats();if(page==='new')preview()};
+const originalPersist=persist;persist=function(){const ok=originalPersist();renderStats();return ok};
+function toggleDetails(id){let el=$(id);el.open=!el.open}
+
+function showSaveNotice(message){
+ let el=document.getElementById('saveNotice');
+ if(!el){el=document.createElement('div');el.id='saveNotice';el.setAttribute('role','status');el.setAttribute('aria-live','polite');document.body.appendChild(el)}
+ clearTimeout(window._saveNoticeTimer);clearTimeout(window._saveNoticeHideTimer);
+ el.textContent=message;el.style.display='block';el.style.opacity='0';el.style.transform='translateY(-8px)';
+ requestAnimationFrame(()=>requestAnimationFrame(()=>{el.style.opacity='1';el.style.transform='translateY(0)'}));
+ window._saveNoticeTimer=setTimeout(()=>{
+   el.style.opacity='0';el.style.transform='translateY(-8px)';
+   window._saveNoticeHideTimer=setTimeout(()=>{el.style.display='none'},750);
+ },2600);
+}
+// 初次開啟停留首頁，避免自動跳轉題庫。
+$('level').value='全部';changeLevel();go('home');updateTrashCount();
+
+const sourceDefaults=['學校考試','模擬考','升學考試','題庫'];
+let sourceConfig=['學校考試','模擬考','升學考試','數學競賽與檢定','題庫','其他'].map(name=>({name,default:sourceDefaults.includes(name)}));
+try{const v=JSON.parse(cloudMemory.getItem('math_bank_source_config_v69'));if(Array.isArray(v)&&v.length)sourceConfig=v}catch(e){}
+function sourceCategory(q){const t=String(q?.sourceType||'');if(['學校段考','校內升學評量','學校考試'].includes(t))return '學校考試';if(['數學競賽','數學檢定','數學競賽與檢定'].includes(t))return '數學競賽與檢定';if(['自編題目','題庫',''].includes(t))return '題庫';return t||'其他'}
+function fillSourceEditor(v){$('editSourceType').replaceChildren(...[...new Set([...sourceConfig.map(x=>x.name),v])].map(n=>new Option(n,n)));$('editSourceType').value=v}
+let composeMode='manual', composeFilters={}, composePicked=new Set(), locked=new Set(), composePage=0, composePool=[];
+const filterDefs=[['source','來源分類',sourceCategory],['level','學制',q=>q.level],['grade','年級',q=>q.grade],['book','冊次',q=>q.book],['unit','單元',q=>q.unit],['chapter','章節',q=>q.chapter],['school','學校／競賽',q=>q.school],['exam','考試名稱',q=>q.sourceDisplay||q.exam],['year','年度',q=>q.year],['type','題型',q=>q.type],['difficulty','難度',q=>normalizeDifficulty(q.difficulty)]];
+composeFilters.source=new Set(sourceConfig.filter(x=>x.default).map(x=>x.name));
+let composeKeyword='',composeTotal=20,composeFavorite=false,composeQuota={difficulty:{},type:{},source:{}};
+function composeValues(k,fn){return [...new Set([...(k==='source'?sourceConfig.map(x=>x.name):[]),...data.map(fn).filter(Boolean)])].sort((a,b)=>String(a).localeCompare(String(b),'zh-TW',{numeric:true}))}
+function composeMatches(q){return filterDefs.every(([k,l,fn])=>!composeFilters[k]||composeFilters[k].has(fn(q)))&&(!composeFavorite||isFeatured(q))&&(!composeKeyword||[q.body,q.source,q.sourceDisplay,q.unit,q.chapter].join(' ').toLowerCase().includes(composeKeyword.toLowerCase()))}
+function setComposeFilter(k,v,on){if(!composeFilters[k]){const f=filterDefs.find(x=>x[0]===k);composeFilters[k]=new Set(composeValues(k,f[2]))}on?composeFilters[k].add(v):composeFilters[k].delete(v);composePage=0;renderComposeResults()}
+function refreshCompose(){const f=$('composeFilters');f.innerHTML=filterDefs.map(([k,l,fn])=>{const vals=composeValues(k,fn);return `<details ${k==='source'||k==='unit'?'open':''} style="margin:8px 0"><summary>${l}（可複選）</summary><div class="toolbar"><button class="outline" data-k="${k}" onclick="composeFilters[this.dataset.k]=undefined;refreshCompose()">全選</button><button class="outline" data-k="${k}" onclick="composeFilters[this.dataset.k]=new Set();refreshCompose()">清除</button></div><div style="display:flex;flex-wrap:wrap;gap:10px">${vals.map(v=>`<label><input style="width:auto" type="checkbox" data-k="${k}" data-v="${esc(v)}" ${!composeFilters[k]||composeFilters[k].has(v)?'checked':''} onchange="setComposeFilter(this.dataset.k,this.dataset.v,this.checked)">${esc(v)}</label>`).join('')}</div></details>`}).join('')+`<div class="field"><label>關鍵字</label><input value="${esc(composeKeyword)}" oninput="composeKeyword=this.value;composePage=0;renderComposeResults()"></div><label><input type="checkbox" style="width:auto" ${composeFavorite?'checked':''} onchange="composeFavorite=this.checked;renderComposeResults()">僅收藏題目</label>`;
+$('composeActions').innerHTML=composeMode==='auto'?`<div class="field"><label>出題總數（含鎖定題目）</label><input type="number" min="1" max="500" value="${composeTotal}" onchange="composeTotal=Number(this.value)"></div>${['difficulty','type','source'].map(k=>{const def=filterDefs.find(x=>x[0]===k);return `<details><summary>指定${def[1]}題數（選填，未填不限）</summary><div style="display:flex;flex-wrap:wrap;gap:8px">${composeValues(k,def[2]).map(v=>`<label>${esc(v)} <input type="number" min="0" style="width:65px" data-k="${k}" data-v="${esc(v)}" value="${composeQuota[k][v]??''}" onchange="if(this.value==='')delete composeQuota[this.dataset.k][this.dataset.v];else composeQuota[this.dataset.k][this.dataset.v]=Number(this.value)"></label>`).join('')}</div></details>`}).join('')}<button class="primary" onclick="autoCompose()">開始自動組卷／重新抽題</button>`:`<div class="toolbar"><button class="outline" onclick="composePool.forEach(q=>composePicked.add(q.id));renderComposeResults()">全選符合條件</button><button class="outline" onclick="composePicked.clear();renderComposeResults()">取消勾選</button><button class="primary" onclick="composePicked.forEach(id=>chosen.add(id));composePicked.clear();renderSelected();renderComposeResults()">加入勾選題目</button></div>`;renderComposeResults()}
+function renderComposeResults(){composePool=data.filter(composeMatches);const n=20;composePage=Math.max(0,Math.min(composePage,Math.ceil(composePool.length/n)-1));$('composeResults').innerHTML=`<p>符合條件 ${composePool.length} 題｜已勾選 ${composePicked.size} 題</p>`+(composeMode==='manual'?composePool.slice(composePage*n,(composePage+1)*n).map(q=>`<article class="question"><label><input type="checkbox" style="width:auto" data-id="${esc(q.id)}" ${composePicked.has(q.id)?'checked':''} onchange="this.checked?composePicked.add(this.dataset.id):composePicked.delete(this.dataset.id);renderComposeResults()"> ${esc(q.unit)}｜${esc(normalizeDifficulty(q.difficulty))}｜${esc(sourceCategory(q))}｜${esc(sourceLabel(q))}${chosen.has(q.id)?'（已加入）':''}</label><div class="body">${sectionMarkup(q.body,imagesOf(q,'body'))}</div></article>`).join('')+`<div class="toolbar"><button class="outline" onclick="composePage--;renderComposeResults()">上一頁</button>${composePage+1}/${Math.max(1,Math.ceil(composePool.length/n))}<button class="outline" onclick="composePage++;renderComposeResults()">下一頁</button></div>`:'');typeset()}
+function shuffleRows(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function autoCompose(){const fixed=[...chosen].filter(id=>locked.has(id)).map(id=>data.find(q=>q.id===id)).filter(Boolean), total=composeTotal;if(!Number.isInteger(total)||total<1||total>500||fixed.length>total)return alert('請確認總題數及鎖定題數。');const rules=Object.entries(composeQuota).flatMap(([k,obj])=>Object.entries(obj).map(([v,n])=>({fn:filterDefs.find(x=>x[0]===k)[2],v,n})));if(rules.some(r=>!Number.isInteger(r.n)||r.n<0||r.n>total))return alert('指定題數不正確。');const pool=data.filter(q=>composeMatches(q)&&!fixed.some(f=>f.id===q.id));if(pool.length+fixed.length<total)return alert('符合條件的題目不足，不會自動放寬來源。');for(let attempt=0;attempt<250;attempt++){let rows=[...fixed],remaining=shuffleRows(pool);while(rows.length<total){let counts=rules.map(r=>rows.filter(q=>r.fn(q)===r.v).length);let candidates=remaining.filter(q=>rules.every((r,i)=>r.fn(q)!==r.v||counts[i]<r.n));if(!candidates.length)break;let score=q=>rules.reduce((a,r,i)=>a+(r.fn(q)===r.v&&counts[i]<r.n?1:0),0);candidates.sort((a,b)=>score(b)-score(a));let q=candidates[0];rows.push(q);remaining=remaining.filter(x=>x.id!==q.id)}if(rows.length===total&&rules.every(r=>rows.filter(q=>r.fn(q)===r.v).length===r.n)){if(chosen.size&&!confirm('以新抽題結果取代未鎖定的目前選題？'))return;chosen=new Set(rows.map(q=>q.id));renderSelected();renderComposeResults();return}}alert('未找到符合全部指定題數的組合，請調整條件；原試卷未變更。')}
+function moveCompose(id,d){let a=[...chosen],i=a.indexOf(id),j=i+d;if(j<0||j>=a.length)return;[a[i],a[j]]=[a[j],a[i]];chosen=new Set(a);renderSelected()}
+function replaceCompose(id){if(locked.has(id))return;let q=data.find(x=>x.id===id);let a=data.filter(x=>!chosen.has(x.id)&&composeMatches(x)&&x.unit===q.unit&&x.type===q.type&&normalizeDifficulty(x.difficulty)===normalizeDifficulty(q.difficulty)&&sourceCategory(x)===sourceCategory(q));if(!a.length)return alert('沒有相同單元、題型、難度及來源的替換題。');chosen=new Set([...chosen].map(x=>x===id?shuffleRows(a)[0].id:x));renderSelected();renderComposeResults()}
+renderSelected=function(){let rows=[...chosen].map(id=>data.find(x=>x.id===id)).filter(Boolean);$('composeCount').textContent=`（${rows.length} 題）`;$('selectionList').innerHTML=rows.map((q,i)=>`<article class="question"><div class="meta">第 ${i+1} 題｜${esc(q.unit)}｜${esc(normalizeDifficulty(q.difficulty))}｜${esc(sourceCategory(q))}</div><div class="body">${sectionMarkup(q.body,imagesOf(q,'body'))}</div><footer>${[['↑','moveCompose(this.dataset.id,-1)'],['↓','moveCompose(this.dataset.id,1)'],[locked.has(q.id)?'解除鎖定':'鎖定','locked.has(this.dataset.id)?locked.delete(this.dataset.id):locked.add(this.dataset.id);renderSelected()'],['換題','replaceCompose(this.dataset.id)'],['移除','chosen.delete(this.dataset.id);locked.delete(this.dataset.id);renderSelected();renderComposeResults()']].map(([l,a])=>`<button class="outline" data-id="${esc(q.id)}" onclick="${a}">${l}</button>`).join('')}</footer></article>`).join('')||'<p>尚未選題。</p>';typeset()};
+const go69=go;go=function(page){go69(page);if(page==='selected')refreshCompose()};
+function manageSources(){let n=prompt('新增來源分類名稱（既有分類可直接調整預設勾選）');if(!n||!n.trim())return;n=n.trim();if(!sourceConfig.some(x=>x.name===n))sourceConfig.push({name:n,default:false});sourceConfig.find(x=>x.name===n).default=confirm('此來源預設納入組卷？');try{cloudMemory.setItem('math_bank_source_config_v69',JSON.stringify(sourceConfig))}catch(e){alert('分類設定無法儲存')}composeFilters.source=new Set(sourceConfig.filter(x=>x.default).map(x=>x.name));refreshCompose()}
+$('composePanel').insertAdjacentHTML('afterbegin','<div class="toolbar"><button class="outline" onclick="manageSources()">新增來源／設定預設勾選</button><button class="outline" onclick="composeFilters.source=new Set(sourceConfig.filter(x=>x.default).map(x=>x.name));refreshCompose()">恢復預設來源</button></div>');
+fillSourceEditor('題庫');
+
+const db=window.supabase?.createClient('https://uoyuhwiqckddvjtferrx.supabase.co','sb_publishable_EyMUACLI6rWeUVtugIl-2Q_S_vaikpU',{auth:{persistSession:true,autoRefreshToken:true,storage:window.sessionStorage,storageKey:"math-bank-tab-auth-v73"}});
+let favoriteBase=new Set();let cloudUser=null,admin=false,busy=false,baseline=new Map(),settingsBase='',categoryBase='',cloudReady=false,failed=false;
+const status=t=>$('cloudStatus').textContent=t;
+const check=r=>{if(r.error)throw Error(r.error.message);return r.data};
+async function allRows(table){let out=[];for(let i=0;;i+=100){let a=check(await db.from(table).select('*').order(table==='questions'?'id':'sort_order').range(i,i+99));out.push(...a);if(a.length<100)return out}}
+function rows(){return new Map([...data.map(q=>[q.id,{id:q.id,data:q,deleted_at:null}]),...trash.map(q=>[q.id,{id:q.id,data:q,deleted_at:q.deletedAt||'1970-01-01T00:00:00Z'}])])}
+function signature(r){return JSON.stringify([r.data,r.deleted_at])}
+function prefs(){return JSON.stringify({chosen:[...chosen],locked:[...locked],composeMode,composeTotal,composeKeyword,composeFavorite,composeQuota,filters:Object.fromEntries(Object.entries(composeFilters).filter(([k,v])=>v).map(([k,v])=>[k,[...v]]))})}
+function redraw(){render();renderStats();updateTrashCount();if(!$('selected').classList.contains('hidden')){renderSelected();refreshCompose()}if(!$('trash').classList.contains('hidden'))renderTrash();if(!$('backup').classList.contains('hidden'))renderPapers()}
+async function loadCloud(){let p=check(await db.from('profiles').select('role,active').eq('id',cloudUser.id).single());if(!p.active)throw Error('帳號未啟用');admin=p.role==='admin';document.body.classList.toggle('viewer',!admin);let rr=await allRows('questions');data=rr.filter(r=>!r.deleted_at).map(r=>r.data);trash=rr.filter(r=>r.deleted_at).map(r=>({...r.data,deletedAt:r.deleted_at}));baseline=new Map(rr.map(r=>[r.id,{sig:signature({data:r.deleted_at?{...r.data,deletedAt:r.deleted_at}:r.data,deleted_at:r.deleted_at}),version:r.updated_at}]));if(admin){let f=check(await db.from('favorites').select('question_id').eq('user_id',cloudUser.id));favoriteBase=new Set(f.map(x=>x.question_id))}let c=await allRows('source_categories');sourceConfig=c.map(r=>({name:r.name,default:r.default_selected}));categoryBase=JSON.stringify(sourceConfig);let st=check(await db.from('user_settings').select('data').eq('user_id',cloudUser.id).maybeSingle())?.data||{};chosen=new Set(st.chosen||[]);locked=new Set(st.locked||[]);composeMode=st.composeMode||'manual';composeTotal=st.composeTotal||20;composeKeyword=st.composeKeyword||'';composeFavorite=!!st.composeFavorite;composeQuota=st.composeQuota||{difficulty:{},type:{},source:{}};composeFilters=st.filters?Object.fromEntries(Object.entries(st.filters).map(([k,v])=>[k,new Set(v)])):{source:new Set(sourceConfig.filter(x=>x.default).map(x=>x.name))};settingsBase=prefs();cloudReady=true;failed=false;redraw();go('home');$('cloudGate').style.display='none';document.querySelector('.shell').inert=false;status('雲端已連線｜'+(admin?'管理員':'一般使用者'))}
+function favoriteDirty(){let f=new Set(data.filter(q=>q.featured).map(q=>q.id));return f.size!==favoriteBase.size||[...f].some(id=>!favoriteBase.has(id))}
+function dirty(){let r=rows();return admin&&(favoriteDirty()||[...r].some(([id,v])=>baseline.get(id)?.sig!==signature(v))||[...baseline.keys()].some(id=>!r.has(id))||categoryBase!==JSON.stringify(sourceConfig))||prefs()!==settingsBase}
+async function syncNow(){if(!cloudReady||busy)return;busy=true;status('同步中…');try{if(admin){let snapshot=structuredClone([...rows()]);let ids=new Set(snapshot.map(([id])=>id));for(let [id,r] of snapshot){let old=baseline.get(id),sig=signature(r);if(old?.sig===sig)continue;let stamp=new Date().toISOString();let payload={...r,updated_at:stamp};let result=old?check(await db.from('questions').update(payload).eq('id',id).eq('updated_at',old.version).select('id,updated_at')):check(await db.from('questions').insert(payload).select('id,updated_at'));if(result.length!==1)throw Error('題目已在其他裝置修改，請先匯出備份，不可直接覆蓋：'+id);baseline.set(id,{sig,version:result[0].updated_at})}for(let [id,old] of [...baseline])if(!ids.has(id)){let r=check(await db.from('questions').delete().eq('id',id).eq('updated_at',old.version).select('id'));if(r.length!==1)throw Error('刪除衝突：'+id);baseline.delete(id)}let f=new Set(snapshot.filter(([id,r])=>!r.deleted_at&&r.data.featured).map(([id])=>id));for(let id of f)if(!favoriteBase.has(id)){check(await db.from('favorites').upsert({user_id:cloudUser.id,question_id:id},{onConflict:'user_id,question_id',ignoreDuplicates:true}));favoriteBase.add(id)}for(let id of [...favoriteBase])if(!f.has(id)){check(await db.from('favorites').delete().eq('user_id',cloudUser.id).eq('question_id',id));favoriteBase.delete(id)}let cat=JSON.stringify(sourceConfig);if(cat!==categoryBase){check(await db.from('source_categories').upsert(sourceConfig.map((x,i)=>({name:x.name,default_selected:x.default,sort_order:i+1})),{onConflict:'name'}));categoryBase=cat}}
+let p=prefs();if(p!==settingsBase){check(await db.from('user_settings').upsert({user_id:cloudUser.id,data:JSON.parse(p),updated_at:new Date().toISOString()}));settingsBase=p}failed=false;status(dirty()?'尚有待同步變更':'雲端同步完成');}catch(e){failed=true;status('同步失敗：'+e.message+'（請備份）')}finally{busy=false}}
+$('cloudLogin').onsubmit=async e=>{e.preventDefault();let b=e.target.querySelector('button');b.disabled=true;b.textContent='登入中…';$('cloudError').textContent='正在驗證帳號…';try{if(!db)throw Error('無法載入連線套件');cloudUser=check(await db.auth.signInWithPassword({email:$('cloudEmail').value,password:$('cloudPassword').value})).user;$('cloudPassword').value='';await loadCloud()}catch(e){$('cloudError').textContent=e.message}finally{b.disabled=false;b.textContent='登入'}};
+$('cloudError').textContent=db?'':'連線套件載入失敗，請確認網路後重新整理。';
+async function restoreLogin(){if(!db){$('cloudGate').dataset.phase="login";return;}const b=$('cloudLogin').querySelector('button');b.disabled=true; $('cloudError').textContent='正在恢復登入狀態…';try{const session=check(await db.auth.getSession())?.session;if(session){cloudUser=check(await db.auth.getUser()).user;await loadCloud()}$('cloudError').textContent=''}catch(e){$('cloudError').textContent='無法恢復登入：'+e.message}finally{b.disabled=false;if(!cloudReady)$('cloudGate').dataset.phase="login"}}
+restoreLogin();
+async function cloudLogout(){if(busy)return alert('正在同步');if(dirty()){await syncNow();if(dirty()||failed)return alert('尚未同步，請先備份');}check(await db.auth.signOut());location.reload()}
+const cloudGo=go;go=function(page){if(cloudReady&&!admin&&['new','trash','backup'].includes(page))return;cloudGo(page)};
+for(const name of ['save','edit','removeQuestion','restoreQuestion','emptyTrash','permanentlyDeleteQuestion','toggleFavorite','manageSources','commitImport','importData','editPaperGroups','exportData']){const fn=window[name];if(typeof fn==='function')window[name]=function(...args){if(!cloudReady||!admin)return;return fn.apply(this,args)}}
+const localNotice=showSaveNotice;showSaveNotice=function(t){localNotice(t+'（待雲端同步）')};
+setInterval(()=>{if(cloudReady&&!busy&&!failed&&dirty())syncNow()},1200);
+window.addEventListener('beforeunload',e=>{if(cloudReady&&(busy||dirty())){e.preventDefault();e.returnValue=''}});
+</script></body></html>
